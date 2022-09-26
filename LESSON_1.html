@@ -566,11 +566,106 @@
                                     </div>
                                 </p>
                                 <h2>Input (ป้อนข้อมูล)</h2>
-                                <p>
-                                    
-
-
-
+                                <p><span class="tab"></span>ฟังก์ชั่น Input ในตัวของ Python เพื่ออ่าน Input จากแป้นพิมพ์ ฟังก์ชัน Input จะอ่านข้อมูลบางส่วนที่ป้อนที่แป้นพิมพ์และส่งคืนข้อมูลดังกล่าวเป็น String กลับไปยังโปรแกรม คุณใช้ฟังก์ Input คำสั่งการมอบหมายที่เป็นไปตามรูปแบบทั่วไปนี้
+                                <br/>variable = input(prompt)
+                                <div style="text-align: center;">
+                                    <br/>Example
+                                </div>
+                                <div style="background-color:rgb(245, 169, 213);">
+                                    <div><span class="tab"></span>
+                                    first_name = input('Enter your first name: ')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    last_name = input('Enter your last name: ')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('Hello', first_name, last_name)
+                                    </div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <br/>ผลลัพธ์
+                                </div>
+                                <div style="background-color:rgb(245, 169, 213);">
+                                    <div><span class="tab"></span>
+                                    Enter your first name : Patcharaphon 
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Enter your last name : Koosomsarp
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Hello Pactharaphon Koosomsarp
+                                    </div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <br/>ใช้ int เเละ float ด้วยการ input
+                                </div>
+                                <div style="background-color:rgb(245, 169, 213);">
+                                    <div><span class="tab"></span>
+                                    hours = input('Enter hours: ')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    int_hours = int(hours)
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    float_hours = float(hours)
+                                    </div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <br/>หรือ
+                                </div>
+                                <div style="background-color:rgb(245, 169, 213);">
+                                    <div><span class="tab"></span>
+                                    int_hours = int(input('Enter hours: '))
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    float_hours = float(input('Enter hours: '))
+                                    </div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <br/>ใส่หลายค่าในหนึ่ง input
+                                </div>
+                                <div style="background-color:rgb(245, 169, 213);">
+                                    <div><span class="tab"></span>
+                                    a, b, c = input("Enter 3 strings: ").split()
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(c, b, a)
+                                    </div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <br/>ผลลัพธ์
+                                </div>
+                                <div style="background-color:rgb(245, 169, 213);">
+                                    <div><span class="tab"></span>
+                                    Enter 3 strings: fish eat cat
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    cat eat fish
+                                    </div>
+                                </div>
+                                </p>
+                                <h2>Comments (ความคิดเห็น)</h2>
+                                <p><span class="tab"></span>ความคิดเห็นเป็นบันทึกคำอธิบายว่าเอกสารบรรทัดหรือส่วนของโปรแกรม
+                                    <div style="background-color:rgb(245, 169, 213);">
+                                        <div><span class="tab"></span>
+                                        #This is single line comments begin with #
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        """
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        This is multi-line comments
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        are enclosed in
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        triple quotes
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        """
+                                        </div>
+                                    </div>
                                 </p>
 							</section>
 					</div>
