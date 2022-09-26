@@ -286,31 +286,31 @@
                                     </div>
                                     <div style="background-color:rgb(245, 169, 213);">
                                         <div><span class="tab"></span>
-                                        x = 7
+                                        x = 15
                                         </div>
                                         <div><span class="tab"></span>
-                                        y = 2
+                                        y = 4
                                         </div>
                                         <div><span class="tab"></span>
-                                        x + y = 9
+                                        print('x + y =' ,x+y) ---> x + y = 19
                                         </div>
                                         <div><span class="tab"></span>
-                                        x - y = 5
+                                        print('x - y =' ,x-y) ---> x - y = 11
                                         </div>
                                         <div><span class="tab"></span>
-                                        x * y = 14
+                                        print('x * y =' ,x*y) ---> x * y = 60
                                         </div>
                                         <div><span class="tab"></span>
-                                        x / y = 3.5
+                                        print('x / y =' ,x/y) ---> x / y = 3.75
                                         </div>
                                         <div><span class="tab"></span>
-                                        x % y = 1
+                                        print('x % y =' ,x%y) ---> x % y = 3
                                         </div>
                                         <div><span class="tab"></span>
-                                        x // y = 3
+                                        print('x // y =' ,x//y) ---> x // y = 3
                                         </div>
                                         <div><span class="tab"></span>
-                                        x ** y = 49
+                                        print('x ** y =' ,x**y) ---> x ** y = 50625
                                         </div>
                                     </div>
                                     <div style="text-align: center;">
@@ -358,28 +358,28 @@
                                     </div>
                                     <div style="background-color:rgb(245, 169, 213);">
                                         <div><span class="tab"></span>
-                                        x = 1
+                                        x = 5
                                         </div>
                                         <div><span class="tab"></span>
-                                        y = 2
+                                        y = 10
                                         </div>
                                         <div><span class="tab"></span>
-                                        x > y is False
+                                        print('x > y is',x>y) ---> x > y is False
                                         </div>
                                         <div><span class="tab"></span>
-                                        x < y is True
+                                        print('x < y is',x<y) ---> x < y is True
                                         </div>
                                         <div><span class="tab"></span>
-                                        x == y is False
+                                        print('x == y is',x>y) ---> x == y is False
                                         </div>
                                         <div><span class="tab"></span>
-                                        x != y is True
+                                        print('x != y is',x>y) ---> x != y is True
                                         </div>
                                         <div><span class="tab"></span>
-                                        x >= y is False
+                                        print('x >= y is',x>y) --->x >= y is False
                                         </div>
                                         <div><span class="tab"></span>
-                                        x <= y = True
+                                        print('x <= y is',x>y) ---> x <= y is True
                                         </div>
                                     </div>
                                     <div style="text-align: center;">
@@ -417,19 +417,15 @@
                                         y = False
                                         </div>
                                         <div><span class="tab"></span>
-                                        # output: x and y is False
-                                        <br/><span class="tab"></span>print('x and y is' ,x and y)
+                                        print('x and y is',x and y) ---> x and y is False
                                         </div>
                                         <div><span class="tab"></span>
-                                        # output: x or y is True
-                                        <br/><span class="tab"></span>print('x or y is' ,x or y)
+                                        print('x or y is',x or y) ---> x or y is True
                                         </div>
                                         <div><span class="tab"></span>
-                                        # output: not x is False
-                                        <br/><span class="tab"></span>print('not x is' ,not x)
+                                        print('x not y is',x not y) --->not x is False
                                         </div>
                                     </div>
-
                                     <div style="text-align: center;">
                                         <br/>Bitwise Operators
                                         <br/>In the table below:Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)
@@ -467,14 +463,116 @@
                                                 </tr>
                                                 <tr>
                                                     <td><<</td>
-                                                    <td>True if operands is false(complements the operand)</td>
-                                                    <td>not x</td>
+                                                    <td>Bitwise left shift</td>
+                                                    <td>x << 2 = 40 (0010 1000)</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
+                                    <div style="text-align: center;">
+                                        <br/>Identity Operators
+                                        <table class="table-danger">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Operators</th>
+                                                    <th>Meaning</th>
+                                                    <th>Example</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>IS</td>
+                                                    <td>True if the operands are identical (refer to the same object)</td>
+                                                    <td>x is True</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>IS NOT</td>
+                                                    <td>True if the operands are not identical (do not refer to the same object)</td>
+                                                    <td>x is not True<y</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        Example
+                                    </div>
+                                    <div style="background-color:rgb(245, 169, 213);">
+                                        <div><span class="tab"></span>
+                                        x1 = 5
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        y1 = 5
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x2 = 'Hello'
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        y2 = 'Hello'
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x3 = [1,2,3]
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        y3 = [1,2,3]]
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        print(x1 is not y1) ---> False
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        print(x2 is y2) ---> True
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        print(x3 is y3) ---> False
+                                         </div>
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <br/>Membership Operators
+                                        <table class="table-danger">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Operators</th>
+                                                    <th>Meaning</th>
+                                                    <th>Example</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>IN</td>
+                                                    <td>True if value/variable is found in the sequence</td>
+                                                    <td>5 in x</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NOT IN</td>
+                                                    <td>True if value/variable is not found in the sequence</td>
+                                                    <td>5 not in x<y</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        Example
+                                    </div>
+                                    <div style="background-color:rgb(245, 169, 213);">
+                                        <div><span class="tab"></span>
+                                        x = 'Hello world'
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        y = {1 : 'a' , 2 : 'b'}
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        print('H' in x) ---> True
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        print('Hello' not in x) ---> True
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        print(1 in y) ---> True
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        print('a' in y) ---> False
+                                        </div>
+                                    </div>
                                 </p>
-							    </section>
+                                <h2>Input (ป้อนข้อมูล)</h2>
+                                <p>
+                                    
+
+
+
+                                </p>
+							</section>
 					</div>
 
 				<!-- Footer -->
