@@ -155,12 +155,326 @@
                                     </div>
                                 </p>
                                 <h2>Number (ตัวเลข)</h2>
-                                <span class="tab"><p>ใช้ตัวเลขโดยตรงในซอร์สโค้ดของคุณ, อย่าใช้เครื่องหมายอัญประกาศเพราะใช้สำหรับสตริง
-                                    <br/>- ต้องขึ้นต้นด้วยตัวอักษรสามารถมีตัวเลขตามหลังได้
-                                    <br/>- สามารถมี Underscore ในชื่อตัวเเปรได้
-                                    <br/>- ไม่สามรถใช้ + หรือ -</p></span>
-							    </section>
+                                <p>ใช้ตัวเลขโดยตรงในซอร์สโค้ดของคุณ, อย่าใช้เครื่องหมายอัญประกาศเพราะใช้สำหรับสตริง
+                                    <br/>- จำนวนเต็มเป็นตัวเลขที่ไม่มีทศนิยม
+                                    <div style="background-color:rgb(245, 169, 213);">
+                                    <div><span class="tab"></span>
+                                    integer = 42
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    float = 4.2
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    a = b = c = d = 0.0
+                                    </div>
+                                    </div>
+                                </p>
+                                <h2>Boolean (ค่าที่เป็นจริง)</h2>
+                                <p>ตัวแปรบูลีนสามารถอ้างอิงค่าใดค่าหนึ่งจากสองค่า: True or False
+                                    <div style="background-color:rgb(245, 169, 213);">
+                                        <div><span class="tab"></span>
+                                        hungry = True
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        sleepy = False
+                                        </div>
+                                        </div>
+                                    <p>
+                                        <div style="background-color:rgb(245, 169, 213);">
+                                            <div><span class="tab"></span>
+                                            t = True
+                                            </div>
+                                            <div><span class="tab"></span>
+                                            type(f)
+                                            </div>
+                                            </div>
+                                            <span class="tab"></span>bool
 
+                                            <div style="background-color:rgb(245, 169, 213);">
+                                                <div><span class="tab"></span>
+                                                f = Fasle
+                                                </div>
+                                                <div><span class="tab"></span>
+                                                type(f)
+                                                </div>
+                                                <div><span class="tab"></span>
+                                                print(f)
+                                                </div>
+                                                </div>
+                                                <span class="tab"></span>False
+                                    </p>
+                                </p>
+                                <h2>String (ตัวอักษร)</h2>
+                                <p>เเสดงข้อความเเละล้อมรอบด้วยคำพูด
+                                    <div style="background-color:rgb(245, 169, 213);">
+                                        <div><span class="tab"></span>
+                                        fruit = 'apple'
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        fruit = "apple"
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        string1, string2, string3, = '', 'Knife', 'Hammer Dance'
+                                        </div>
+                                        </div>
+                                    <p>การใช้เครื่องหมายคำพูดภายในสตริง
+                                    <div style="background-color:rgb(245, 169, 213);">
+                                        <div><span class="tab"></span>
+                                        sentence = 'She said, "That is a great tasting apple!"'
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        sentence = "That's a great tasting apple!"
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        double = "She said, \"That's a great tasting apple!\""
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        sentence = 'She said, "That\'s a great tasting apple!"'
+                                        </div>
+                                    </div>
+                                    </p>
+                                </p>
+                                <h2>Operators (ตัวดำเนินการ)</h2>
+                                <p><span class="tab"></span>Operators (ตัวดำเนินการ) คือกลุ่มของเครื่องหมายหรือสัญลักษณ์ที่ใช้ทำงานเหมือนกับฟังก์ชัน แต่แตกต่างกันตรงไวยากรณ์หรือความหมายในการใช้งาน ในภาษา Python นั้นสนับสนุนตัวดำเนินการประเภทต่างๆ สำหรับการเขียนโปรแกรม เช่น ตัวดำเนินการ + เป็นตัวดำเนินการทางคณิตศาสตร์ที่ใช้สำหรับการบวกตัวเลขเข้าด้วยกัน หรือตัวดำเนินการ > เป็นตัวดำเนินการเพื่อให้เปรียบเทียบค่าสองค่า
+                                    <div style="text-align: center;">
+                                        <br/>Arithmetic Operators
+                                        <table class="table-danger">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Operators</th>
+                                                    <th>Meaning</th>
+                                                    <th>Example</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>+</td>
+                                                    <td>Add two operands or unary plus</td>
+                                                    <td>x+y+2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>-</td>
+                                                    <td>Subtract right operand from the left or unary minus</td>
+                                                    <td>x-y-2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>*</td>
+                                                    <td>Multiply two oprands</td>
+                                                    <td>x*y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>/</td>
+                                                    <td>Divide left operand by the right one(always results into float)</td>
+                                                    <td>x/y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>%</td>
+                                                    <td>Modulus-remainder of the division of left operand by the right</td>
+                                                    <td>x%y (remainder of x/y)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>//</td>
+                                                    <td>Floor division-division that results into whole number adjusted to the left in the number line</td>
+                                                    <td>x//y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>**</td>
+                                                    <td>Exponent-left operand raised to the power of right</td>
+                                                    <td>x**y (x to the power y)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        Example
+                                    </div>
+                                    <div style="background-color:rgb(245, 169, 213);">
+                                        <div><span class="tab"></span>
+                                        x = 7
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        y = 2
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x + y = 9
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x - y = 5
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x * y = 14
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x / y = 3.5
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x % y = 1
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x // y = 3
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x ** y = 49
+                                        </div>
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <br/>Comparison Operators
+                                        <table class="table-danger">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Operators</th>
+                                                    <th>Meaning</th>
+                                                    <th>Example</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>></td>
+                                                    <td>Greater that-True if left operand is greater than the right</td>
+                                                    <td>x>y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><</td>
+                                                    <td>Less that-True if left operand is less than the right</td>
+                                                    <td>x<y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>==</td>
+                                                    <td>Equal to-True if both operands are equal</td>
+                                                    <td>x==y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>!=</td>
+                                                    <td>Not equal to-True if operands are not equal</td>
+                                                    <td>x!=y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>>=</td>
+                                                    <td>Greater than or equal to-True if left operand is greater than or equal to the right</td>
+                                                    <td>x>=y (remainder of x/y)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><=</td>
+                                                    <td>Less than or equal to-True if left operand is less than or equal to the right</td>
+                                                    <td>x<=y</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        Example
+                                    </div>
+                                    <div style="background-color:rgb(245, 169, 213);">
+                                        <div><span class="tab"></span>
+                                        x = 1
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        y = 2
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x > y is False
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x < y is True
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x == y is False
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x != y is True
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x >= y is False
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        x <= y = True
+                                        </div>
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <br/>Logical Operators
+                                        <table class="table-danger">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Operators</th>
+                                                    <th>Meaning</th>
+                                                    <th>Example</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>AND</td>
+                                                    <td>True if both the operands are true</td>
+                                                    <td>x and y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>OR</td>
+                                                    <td>True if either of the operands is True</td>
+                                                    <td>x or y<y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NOT</td>
+                                                    <td>True if operands is false(complements the operand)</td>
+                                                    <td>not x</td>
+                                            </tbody>
+                                        </table>
+                                        Example
+                                    </div>
+                                    <div style="background-color:rgb(245, 169, 213);">
+                                        <div><span class="tab"></span>
+                                        x = True
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        y = False
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        # output: x and y is False
+                                        <br/><span class="tab"></span>print('x and y is' ,x and y)
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        # output: x or y is True
+                                        <br/><span class="tab"></span>print('x or y is' ,x or y)
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        # output: not x is False
+                                        <br/><span class="tab"></span>print('not x is' ,not x)
+                                        </div>
+                                    </div>
+
+                                    <div style="text-align: center;">
+                                        <br/>Bitwise Operators
+                                        <br/>In the table below:Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)
+                                        <table class="table-danger">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Operators</th>
+                                                    <th>Meaning</th>
+                                                    <th>Example</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>&</td>
+                                                    <td>Bitwise AND</td>
+                                                    <td>x & y = 0 (0000 0000)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>|</td>
+                                                    <td>Bitwise OR</td>
+                                                    <td>x | y = 14 (0000 1110)<y</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>~</td>
+                                                    <td>Bitwise NOT</td>
+                                                    <td>~x = -11 (1111 0101)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>^</td>
+                                                    <td>Bitwise XOR</td>
+                                                    <td>x ^ y = 14 (0000 1110)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>>></td>
+                                                    <td>Bitwise right shift</td>
+                                                    <td>x >> 2 = 2 (0000 0010)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><<</td>
+                                                    <td>True if operands is false(complements the operand)</td>
+                                                    <td>not x</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </p>
+							    </section>
 					</div>
 
 				<!-- Footer -->
@@ -208,8 +522,23 @@
 </html>
 
 <style>
- .tab {
-        display: inline-block;
-        margin-left: 40px;
+.tab {
+    display: inline-block;
+    margin-left: 40px;
     }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 </style>
