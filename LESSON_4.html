@@ -1,0 +1,878 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>LESSON 4</h1>
+						<p>String</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2>String</h2>
+								<p><span class="tab"></span>ข้อมูลสายอักษร หรือสตริง หมายถึง ข้อมูลที่เป็น ตัวอักษร ข้อความ หรือประโยค ซึ่งตัวแปร
+                                    ชนิดนี้ไม่สามารถนำมาคำนวณได้ในการประกาศตัวแปรชนิดนี้ ข้อความจะต้องอยู่ภายใต้เครื่องหมาย
+                                    (" ") หรือเครื่องหมาย (' ') กำกับอยู่ เช่น author = 'Suchart' หรือ author = "Suchart" ดังนั้นในกรณี
+                                    ที่มีการเก็บในลักษณะเป็นตัวเลข เช่น '15.25' จึงมีความหมายเป็นเพียงสายอักษร ไม่สามารถนำมา
+                                    ประมวลผลได้ แต่ถ้าผู้เขียนโปรแกรมต้องการให้คำนวณได้จำเป็นต้องใช้ฟังก์ชันเพื่อเปลี่ยนชนิดตัว
+                                    แปร (Forcing) จากสายอักษรไปเป็นจำนวนเต็ม หรือจำนวนจริง จึงจะสามารถประมวลผลได้ วิธีการ
+                                    เขียนคำสั่งเพื่อเก็บข้อมูลชนิดตัวแปรสายอักษร
+                                    </p>
+								<h2>ตัวอย่าง</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    var1 = 'Hello World!'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    var2 = "Python Programming"
+                                    </div>
+                                </div>
+                                <image src="images/รูปภาพ10.png"></image>
+
+                                <h2>String</h2>
+                                <p><span class="tab"></span>-เเสดงข้อความ</p>
+                                <p><span class="tab"></span>-ล้อมรอบด้วยคำพูด</p>
+
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    fruit = 'apple'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    fruit = "apple"
+                                    </div>
+                                </div>
+                                <h2>การใช้เครื่องหมายคำพูดภายในสตริง</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    sentence = 'She said, "That is a great tasting apple!"
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    sentence = "That's a great tasting apple!"
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    double = "She said, \"That 's a great tasting apple! \"
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    single = 'She said, "That\'s a great tasting apple! " '
+                                    </div>
+                                </div>
+                                <h2>String and Printing</h2>
+                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    fruit = 'apple'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(fruit)
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(orange)
+                                    </div>
+                                </div>
+                                <h2>ผลลัพธ์</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    apple
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    orange
+                                    </div>
+                                </div>
+
+                                <h2>String Index</h2>
+                                <h2>Indexing</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    String : apple
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Index : 0 1 2 3 4
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    a = 'apple'[0]
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    e = 'apple'[4]
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    fruit = 'apple'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    first character = fruit[0]
+                                    </div>
+                                </div>
+
+                                <h2>STRING ARE IMMUTABLE</h2>
+                                <p><span class="tab"></span>ใน Python สตริงจะไม่เปลี่ยนรูป ซึ่งหมายความว่าเมื่อสร้างแล้ว ไม่สามารถเปลี่ยนแปลงได้ การดำเนินการบางอย่าง เช่น การต่อกัน ให้รู้สึกว่าพวกเขาแก้ไขสตริง</p>
+                                <image src="images/รูปภาพ11.png"></image>
+                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    friend = 'Kill'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    friend[0] = 'w'
+                                    </div>
+                                </div>
+                                <h2>String Slicing</h2>
+                                <image src="images/รูปภาพ12.png"></image>
+                                <image src="images/รูปภาพ13.png"></image>
+                                <image src="images/รูปภาพ14.png"></image>
+                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <image src="images/รูปภาพ15.png"></image>
+                                <h2>String Fuction</h2>
+                                <h2>Length Fuction</h2>
+                                <h2>The len() Function</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    fruit = 'apple'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    fruit_len = len(fruit)
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(fruit_len)
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    5
+                                    </div>
+                                </div>
+                                <h2>Nesting Function</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    fruit = 'apple'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(len(fruit))
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    5
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    print(len('apple'))
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    5
+                                    </div>
+                                </div>
+                                <h2>ตัวอย่างโปรแกรม</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    city = 'Bangkok'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    index = 0
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    while index < len(city):
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print(city[index])
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    index = 0
+                                    </div>
+                                </div>
+
+                                <h2>Basic String Methods</h2>
+                                <p><span class="tab"></span>lower(), upper(), format()</p>
+                                <h2>String Methods</h2>
+                                <p><span class="tab"></span>- Everything in Python is an object.</p>
+                                <p><span class="tab"></span>- Every object has a type.</p>
+                                <p><span class="tab"></span>- 'apple' is an object of type "str".</p>
+                                <p><span class="tab"></span>- 'apple' is a string object.</p>
+                                <p><span class="tab"></span>- Fruit = 'apple'.</p>
+                                <p><span class="tab"></span><span class="tab"></span>- fruit is a string object.</p>
+                                <p><span class="tab"></span>- Methods are fuctions run against an object.</p>
+                                <p><span class="tab"></span><span class="tab"></span>- object.method()</p>
+                                <p><span class="tab"></span>- String methods:</p>
+                                <p><span class="tab"></span><span class="tab"></span>- upper() : Returns a copy of the string in uppercase.</p>
+                                <p><span class="tab"></span><span class="tab"></span>- lower() : Returns a copy of the string in lowercase.</p>
+                                <p><span class="tab"></span><span class="tab"></span>- format() : Returns a formatted version of the string.</p>
+                                <h2>The lower() String Method</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    fruit = 'Apple'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(fruit.lower)
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    apple
+                                    </div>
+                                </div>
+                                <h2>The upper() String Method</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    fruit = 'Apple'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(fruit.upper)
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    APPLE
+                                    </div>
+                                </div>
+                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    again = 'y'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    while again.lower() == 'y':
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('Hello')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('Do you want to see that again?')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    again = input('y = yes, anything else = no: ')
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    Hello
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Do you want to see that again?
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    y = yes, anything else = no: y
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Hello
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Do you want to see that again?
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    y = yes, anything else = no: y
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Hello
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Do you want to see that again?
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    y = yes, anything else = no: n
+                                    </div>
+                                </div>
+                                <h2>String Concatenation</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    print( 'I<span class="tab"></span>'<span class="tab"></span>+'love<span class="tab"></span>'<span class="tab"></span>+<span class="tab"></span>'Python.' )
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print( 'I'<span class="tab"></span>+'<span class="tab"></span>love<span class="tab"></span>'<span class="tab"></span>+<span class="tab"></span>'<span class="tab"></span>Python.' )
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print( 'I'<span class="tab"></span>+<span class="tab"></span>'love'<span class="tab"></span>+<span class="tab"></span>'Python.' )
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    I love Python.
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    I love Python.
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    IlovePython.
+                                    </div>
+                                </div>
+                                <h2>Repeating String</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    print('-'*34)
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    supernice = '<span class="tab"></span>Nice<span class="tab"></span>'*3
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('-'*34)
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    ----------------------------------
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Nice<span class="tab"></span>Nice<span class="tab"></span>Nice
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    -----------------------------------
+                                    </div>
+                                </div>
+                                <h2>STRING USING STRING()</h2>
+                                <h2>The str() Function</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    version = 3
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('I love python' + str(version) + '.')
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    I love Python 3.
+                                    </div>
+                                </div>
+                                <h2>Formatting Strings</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    print('I<span class="tab"></span>{}<span class="tab"></span>Python.<span class="tab"></span>'<span class="tab"></span>.format('<span class="tab"></span>Love<span class="tab"></span>'))
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('<span class="tab"></span>{}<span class="tab"></span>{}<span class="tab"></span>{}<span class="tab"></span>'<span class="tab"></span>.format('I',<span class="tab"></span>'Love',<span class="tab"></span>'Python.'))
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    I love Python.
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    I love Python.
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    first = 'I'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    second = 'love'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Third = 'Python'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('<span class="tab"></span>{}<span class="tab"></span>{}<span class="tab"></span>{}<span class="tab"></span>. '<span class="tab"></span>.format<span class="tab"></span>(first,second,Third))
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    I<span class="tab"></span>love<span class="tab"></span>Python<span class="tab"></span>.
+                                    </div>
+                                </div>
+                                <h2>Formatting Strings Alignment</h2>
+                                <p><span class="tab"></span><<span class="tab"></span>Left</p>
+                                <p><span class="tab"></span>^<span class="tab"></span>Center</p>
+                                <p><span class="tab"></span>><span class="tab"></span>Right</p>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    print('<span class="tab"></span>{0:8}<span class="tab"></span>|<span class="tab"></span>{1:>8}<span class="tab"></span>'<span class="tab"></span>.format('Fruit'<span class="tab"></span>,<span class="tab"></span>'Quantity'))
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('<span class="tab"></span>{0:8}<span class="tab"></span>|<span class="tab"></span>{1:>8}<span class="tab"></span>'<span class="tab"></span>.format('Apple'<span class="tab"></span>,<span class="tab"></span>'3'))
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('<span class="tab"></span>{0:8}<span class="tab"></span>|<span class="tab"></span>{1:>8}<span class="tab"></span>'<span class="tab"></span>.format('Orange'<span class="tab"></span>,<span class="tab"></span>'10'))
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    Fruit<span class="tab"></span>|<span class="tab"></span>Quantity
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Apple<span class="tab"></span>|<span class="tab"></span>3
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Orange<span class="tab"></span>|<span class="tab"></span>10
+                                    </div>
+                                </div>
+                                <h2>Formatting Strings - Data Types</h2>
+                                <p><span class="tab"></span>F<span class="tab"></span>Float</p>
+                                <p><span class="tab"></span>.NF<span class="tab"></span>N = The number of decimal place</p>
+                                <h2>{:.2f}</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    print('<span class="tab"></span>{0:8}<span class="tab"></span>|<span class="tab"></span>{1:>8}<span class="tab"></span>'<span class="tab"></span>.format('Fruit'<span class="tab"></span>,<span class="tab"></span>'Quantity'))
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('<span class="tab"></span>{0:8}<span class="tab"></span>|<span class="tab"></span>{1:>8.2f}<span class="tab"></span>'<span class="tab"></span>.format('Apple'<span class="tab"></span>,<span class="tab"></span>'2.33333'))
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('<span class="tab"></span>{0:8}<span class="tab"></span>|<span class="tab"></span>{1:>8.2f}<span class="tab"></span>'<span class="tab"></span>.format('Orange'<span class="tab"></span>,<span class="tab"></span>'10'))
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    Fruit<span class="tab"></span>|<span class="tab"></span>Quantity
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Apple<span class="tab"></span>|<span class="tab"></span>2.33
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Orange<span class="tab"></span>|<span class="tab"></span>10.00
+                                    </div>
+                                </div>
+                                <h2>lower(), upper(), format()</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    balloon = "Patcharaphon."
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(" " .join(balloon))
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print("" join(reversed(balloon)))
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(" . join([ "sharks" "crustaceans", "plankton"]))
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    P a t c h a r a p h o n<span class="tab"></span>h a s<span class="tab"></span>b a l l o o n.
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    .noollab a sah nohparahctap
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    sharks,crustaceans,plankton
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    balloon = "Patcharaphon."
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(balloon.split())
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(balloon.split("a"))
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    ['Patcharaphon.']
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    ['P', 'tch', 'r', 'phon.']
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    date string = '11/26/2014'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    date_list = date_string.split('/')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('Month:', date list[0])
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print( 'Day:', date list[1])
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print( 'Year:', date list[2])
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(date_list)
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    Month: 11
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Day: 26
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    Year: 2014
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    ['11', '26 ', '2014']
+                                    </div>
+                                </div>
+                                <h2>BASIC STRING METHODS</h2>
+                                <table class="table-danger">
+                                    <tbody>
+                                        <tr>
+                                            <th>Method/th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>lstrip()</td>
+                                            <td>Returns a copy of the string with all leading whitespace characters removed.
+                                                Leading whitespace characters are spaces, newlines (\n), and tabs (\t) that
+                                                appear at the beginning of the string.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>lstrip(char)</td>
+                                            <td>The char argument is a string containing a character. Returns a copy of the string
+                                                with all instances of char that appear at the beginning of the string removed.
+                                                Returns a copy of the string with all trailing whitespace characters removed.
+                                                Trailing whitespace characters are spaces, newlines (\n), and tabs (\t) that
+                                                appear at the end of the string.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>rstrip(char)</td>
+                                            <td>The char argument is a string containing a character. The method returns a
+                                                copy of the string with all instances of char that appear at the end of the string
+                                                removed.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>strip()</td>
+                                            <td>Returns a copy of the string with all leading and trailing whitespace characters
+                                                removed.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>strip(char)</td>
+                                            <td>Returns a copy of the string with all instances of char that appear at the begin-
+                                                ning and the end of the string removed.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    balloon = '<span class="tab"></span>Patcharaphon has a balloon<span class="tab"></span>'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('[',balloon.strip(),]')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('[',balloon.lstrip(),]')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('[',balloon.rstrip(),]')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    balloon = '###Patcharaphon has a balloon####'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('[',balloon.strip('#'),]')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('[',balloon.rstrip('#'),]')
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    [ Patcharaphon has a ballon ]
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    [ Patcharaphon has a ballon<span class="tab"></span>]
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    [<span class="tab"></span>Patcharaphon has a ballon ]
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    [ Patcharaphon has a ballon ]
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    [###Patcharaphon has a ballon###]
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('[',balloon.strip('#'),]')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('[',balloon.rstrip('#'),]')
+                                    </div>
+                                </div>
+                                <h2>SEARCH AND REPLACE METHODS</h2>
+                                <table class="table-danger">
+                                    <tbody>
+                                        <tr>
+                                            <th>Method</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>endswith(substring)</td>
+                                            <td>The substring argument is a string. The method returns true if
+                                                the string ends with substring.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>find(substring)</td>
+                                            <td>The substring argument is a string. The method returns
+                                                the lowest index in the string where substring is found. If
+                                                substring is not found, the method returns -1.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>replace(old, new)</td>
+                                            <td>The old and new arguments are both strings. The method returns
+                                                a copy of the string with all instances of old replaced by new.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>startswith(substring)</td>
+                                            <td>The substring argument is a string. The method returns true if
+                                                the string starts with substring.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    ballon = "Patcharaphon has a balloon."
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(ballon.find("phon"))
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    4
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    string = 'Four score and seven years ago'
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    position = string.find('seven')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    if position != -1:
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('The word "seven" was found at index', position)
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    else:
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('The word "seven" was not found.')
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    The word "seven" was found at index 15
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    balloon = "Patcharaphon has a balloon."
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    position = string.find('seven')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    if position != -1:
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    Patcharaphon had a balloon.
+                                    </div>
+                                </div>
+                                <h2>Boolean Test</h2>
+                                <h2>String Boolean Methods</h2>
+                                <table class="table-danger">
+                                    <tbody>
+                                        <tr>
+                                            <th>Method</th>
+                                            <th>True if</th>
+                                        </tr>
+                                        <tr>
+                                            <td>str.isalnum()</td>
+                                            <td>String consists of only alphanumeric characters (no symbols)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>str.isalpha()</td>
+                                            <td>String consists of only alphabetic characters (no symbols)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>str.islower()</td>
+                                            <td>String's alphabetic characters are all lower case</td>
+                                        </tr>
+                                        <tr>
+                                            <td>str.isnumeric()</td>
+                                            <td>String consists of only numeric characters</td>
+                                        </tr>
+                                        <tr>
+                                            <td>str.isspace()</td>
+                                            <td>String consists of only whitespace characters</td>
+                                        </tr>
+                                        <tr>
+                                            <td>str.istitle()</td>
+                                            <td>String is in title case</td>
+                                        </tr>
+                                        <tr>
+                                            <td>str.isupper()</td>
+                                            <td>String's alphabetic characters are all upper case</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    number = "5"
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    letters = "abcdef"
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    space = " "
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(number.isnumeric())
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(letters.isalpha())
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(space.isspace())
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    True
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    False
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    True
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    movie = "2001: A SAMMY ODYSSEY"
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    book = "A Thousand Splendid Sharks"
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    poem = "sammy lived in a pretty how town"
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(movie.isalnum())
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(movie.isupper())
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(book.istitle())
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(book.isupper())
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(poem.istitle())
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print(poem.islower())
+                                    </div>
+                                </div>
+                                <h2>SUMMARY</h2>
+                                <h2>STRING METHODS</h2>
+                                <p><span class="tab"></span>- Strings are surrounded by quotation marks.</p>
+                                <p><span class="tab"></span>- Each character is a string is assigned an index.</p>
+                                <p><span class="tab"></span>- Slicing strings using str[Start:Stop:Stride]</p>
+                                <p><span class="tab"></span>- Built-in functions:</p>
+                                <p><span class="tab"></span><span class="tab"></span>- len() : Returns the length of an item</p>
+                                <p><span class="tab"></span><span class="tab"></span>- str() : Returns a string object.</p>
+                                <p><span class="tab"></span>- Everything in python is an object.</p>
+                                <p><span class="tab"></span>- Objects can have a methods.</p>
+                                <p><span class="tab"></span>- methods are functions that operate on an object.</p>
+                                <p><span class="tab"></span>- str.upper()…etc.</p>
+
+                            </section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<style>
+    .tab {
+        display: inline-block;
+        margin-left: 40px;
+        }
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    .text {
+      background-color: rgb(245, 169, 213);
+      color: white;
+      border: 2px solid rgb(229, 101, 206);
+      margin: 20px;
+      padding: 20px;
+    }
+    </style>
