@@ -1,0 +1,519 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>LESSON 5</h1>
+						<p>Functions</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2>Functions</h2>
+								<p><span class="tab"></span>ฟังก์ชัน คือ โปรแกรมย่อยหรืองานย่อยๆ (Sub-program) ภายในโปรแกรมขนาดใหญ่ หรือ บางครั้งเรียกว่า เมท็อด (Method) หรือรูทีน (Routine) ก็ได้โดยปกติโปรแกรมที่มีขนาดใหญ่ จะ ประกอบด้วยคำสั่งต่างๆ มากมายและในโปรแกรมขนาดใหญ่นั้นจะมีคำสั่งที่ทำงานเหมือนกัน ซ้ำกัน หรือถูกเรียกใช้งานอยู่เป็นประจำปรากฎอยู่ ดังนั้นเพื่อลดคำสั่งให้โปรแกรมสั้นและกระชับลง จึงได้ รวบรวมคำสั่งที่ทำหน้าที่เหมือนกันเหล่านั้นเข้าไว้ด้วยกันเป็นโปรแกรมย่อย เมื่อต้องการเรียกใช้ โปรแกรมย่อยเหล่านั้นตรงจุดใดๆ ในโปรแกรม สามารถเรียกใช้โดยผ่านทางชื่อของฟังก์ชันได้ทันที (Function call) กรณีการเขียนโปรแกรมเชิงโครงสร้าง (Strutural programming) นิยมเรียกว่า “ฟังก์ชัน” แต่ในการเขียนโปรแกรมเชิงวัตถุ(Object oriented programmning) เรียกว่า “เมธอด” </p>
+								<p><span class="tab"></span>ประเภทของ ฟังก์ชันแบ่งออกเป็น 2 ชนิดคือ ฟังก์ชันมาตรฐาน (Standard functions) ที่มีอยู่ในไลบรารีของภาษาไพธอน และฟังก์ชันที่ผู้เขียนโปรแกรมสร้างขึ้นเอง (User defined functions) ฟังก์ชันที่มีอยู่แล้วในภาษา ไพธอนเมื่อเรียกใช้งานจะต้องท าการ import แฟ้มเข้ามาก่อนเสมอ ในบทนี้จะกล่าวถึงการสร้างฟังก์ชัน ที่ผู้เขียนโปรแกรมสร้างขึ้นใช้งานเอง</p>
+                                <h2>Functions</h2>
+								<p><span class="tab"></span>ฟังก์ชันคือกลุ่มของคำสั่งที่มีอยู่ภายใน a โปรแกรมสำหรับวัตถุประสงค์ในการทำงานเฉพาะ</p>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    def function name()
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    statement(s)
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    statement(s)
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    etc.
+                                    </div>
+                                </div>
+                                <h2>Functions</h2>
+                                <p><span class="tab"></span>- A function is a section of reusable code that performs an action.</p>
+                                <p><span class="tab"></span>- A function has a name and is called, or executed, by that name.</p>
+                                <p><span class="tab"></span>- Optionally, functions can accept arguments and return data.</p>
+                                <image src="images/รูปภาพ16.png"></image>
+                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    def message():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('I am Patcharaphon')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('I love Python')
+                                    </div>
+                                </div>
+
+
+
+                                <h2>Functions Names</h2>
+                                <h2>Function naming rules:</h2>
+                                <p><span class="tab"></span>- Cannot use key words as a function name.</p>
+                                <p><span class="tab"></span>- Cannot contain spaces.</p>
+                                <p><span class="tab"></span>- First character must be a letter or underscore.</p>
+                                <p><span class="tab"></span>- All other characters must be a letter, number or underscore.</p>
+                                <p><span class="tab"></span>- Uppercase and lowercase characters are distinct.</p>
+                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    def manin():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('I have a message for you.')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    message()
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('Goodbye!')
+                                    </div>
+
+                                    <div><span class="tab"></span>
+                                    def message():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('I am Patcharaphon.')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('I love Python')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    main()
+                                    </div>
+                                </div>
+                                <h2>BENEFITS OF MODULARISING A PROGRAM WITH FUNCTIONS</h2>
+                                <p><span class="tab"></span>- Simpler Code.</p>
+                                <p><span class="tab"></span>- Code Reuse.</p>
+                                <p><span class="tab"></span>- Better Testing.</p>
+                                <p><span class="tab"></span>- Faster Development.</p>
+                                <p><span class="tab"></span>- Easier Facilitation of Teamwork.</p>
+                                <image src="images/รูปภาพ17.png"></image>
+                                <image src="images/รูปภาพ18.png"></image>
+
+                                <h2>Passing Arguments to Functions</h2>
+                                <h2>LOCAL VARIABLES</h2>
+                                <p><span class="tab"></span>A local variable is created inside a function and cannot be accessed by statements that are outside the function. Different functions can have local variables with the same names because the functions cannot see each other's local variables.</p>
+                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    def manin():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    texas()
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    california()
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    def texas():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    birds = 5000
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('texas has', birds, 'birds.')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    def california():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    birds = 8000
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('california has', birds, 'birds.')
+                                    </div>
+                                </div>
+                                <image src="images/รูปภาพ19.png"></image>
+                                <h2>PASSING ARGUMENTS</h2>
+                                <p><span class="tab"></span>An argument is any piece of data that is passed into a function when the function is called. A parameter is a variable that receives an argument that is passed into a function.</p>
+                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    def main():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('The sum of 12 and 14 is')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    show_sum(12, 45)
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    def show_sum(num1, num2):
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    result = num1 + num2
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print(result)
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    main()
+                                    </div>
+                                </div>
+                                <image src="images/รูปภาพ20.png"></image>
+                                <h2>PASSING STRING ARGUMENTS</h2>
+                                <h2>GLOBAL VARIABLES AND CONSTANTS</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    number=0
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    def main():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    global number
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    number = int(input('Enter a number: '))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    show number()
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    def show_number ():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('The number you entered is', number)
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    main()
+                                    </div>
+                                </div>
+                                <h2>Value-Returning Functions</h2>
+                                <p><span class="tab"></span>A value-returning function has a return statement that returns a value back to the part of the program that called it.</p>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    def function_name():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    statement
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    statement
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    etc.
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    return expression
+                                    </div>
+                                </div>
+                                <image src="images/รูปภาพ21.png"></image>
+                                <h2>IPO AND FUNCTION</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    def discount():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    return price * DISCOUNT_PERCENTAGE
+                                    </div>
+                                </div>
+                                <image src="images/รูปภาพ22.png"></image>
+
+                                <h2>VALUE-RETURNING FUNCTIONS</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    def get_ name():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    first = input('Enter your first name: ')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    last = input( 'Enter your last name: ')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    return first, last
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    first_name, last_name = get_ name()
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    print('First name : ,first name, Last name : last name)
+                                    </div>
+                                </div>
+                                <h2>Storing Functions in Modules</h2>
+                                <p><span class="tab"></span>A module is a file that contains Python code. Large programs are easier to debug and maintain when they are divided into modules.</p>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    def area(width, length):
+                                    </div>
+                                    <div><span class="tab"></span></span><span class="tab"></span>
+                                    return width * length
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    def perimeter(width, length):
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    return 2 * (width, length)
+                                    </div>
+                                </div>
+                                <h2>USING MODULES</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    import circle
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    import rectangle
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    AREA_CIRCLE_CHOICE = 1
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    CIRCUMFERENCE_CHOICE = 2
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    AREA_RECTANGLE_CHOICE = 3
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    PERIMETER_RECTANGLE_CHOICE = 4
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    QUIT_CHOICE = 5
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    def main():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    choice
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    while choice != QUIT CHOICE:
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    display_menu()
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    choice = int(input('Enter your choice: '))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    if choice == AREA_CIRCLE_CHOICE :
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    radius = float(input("Enter the circle's radius: "))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    print('The area is', circle.area(radius))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    elif choice == CIRCUMFERENCE_CHOICE:
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    radius = float(input("Enter the circle's radius: "))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    print( 'The circumference is', circle.circumference (radius))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    elif choice == AREA RECTANGLE CHOICE:
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    width = float(input("Enter the rectangle's width: "))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    length = float(input("Enter the rectangle's length: "))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    print( 'The area is', rectangle.area(width, length))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    elif choice == PERIMETER_RECTANGLE_CHOICE:
+                                    </div>
+                                    <div><span class="tab"><span class="tab"></span></span><span class="tab"></span><span class="tab"></span>
+                                    width = float(input("Enter the rectangle's width: "))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    length = float(input("Enter the rectangle's length: "))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    print( 'The perimeter is', rectangle.perimeter(width, length))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    elif choice == QUIT_CHOICE:
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    print('Exiting the program...')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    else:
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    print('Error: invalid Selection.')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    def display_menu():
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('<span class="tab"></span>MENU')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('1) Area of a circle')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('2) Circumference of a circle')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('3) Area of a rectangle')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('4) Perimeter of a rectangle')
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('5) Quit')
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    main()
+                                    </div>
+                                </div>
+
+                                <h2>Recursive: a function that calls itself.</h2>
+                                <h2>RECURSIVE</h2>
+                                <div class="text">
+                                    <div><span class="tab"></span>
+                                    def main():
+                                    </div>
+                                    <div><span class="tab"></span></span><span class="tab"></span>
+                                    number = int(input('Enter a nonnegative integer: '))
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    fact = factorial(number)
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    print('The factorial of', number, 'is', fact)
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    def factorial(num):
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    if num == 0:
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    return 1
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span>
+                                    else:
+                                    </div>
+                                    <div><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                                    return num * factorial(num-1)
+                                    </div>
+                                    <div><span class="tab"></span>
+                                    main()
+                                    </div>
+                                </div>
+
+                                <h2>Python common functions</h2>
+                                <h2>COMMON FUNCTIONS</h2>
+                                <image src="images/รูปภาพ23.png"></image>
+                                <image src="images/รูปภาพ24.png"></image>
+                                <image src="images/รูปภาพ25.png"></image>
+                                <image src="images/รูปภาพ26.png"></image>
+                                <image src="images/รูปภาพ27.png"></image>
+                                <image src="images/รูปภาพ28.png"></image>
+                            </section>
+                            
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<style>
+    .tab {
+        display: inline-block;
+        margin-left: 40px;
+        }
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    .text {
+      background-color: rgb(245, 169, 213);
+      color: white;
+      border: 2px solid rgb(229, 101, 206);
+      margin: 20px;
+      padding: 20px;
+    }
+    </style>
