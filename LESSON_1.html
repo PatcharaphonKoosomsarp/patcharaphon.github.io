@@ -28,17 +28,17 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
-								<h2>Variables (ตัวเเปร)</h2>
+								<h2><b>Variables (ตัวเเปร)</b></h2>
 								<span class="tab"><p>Variables คือ ตัวเเปร ที่ใช้เก็บค่าที่ต้องการนำมาใช้งานในการเขียนโปรเเกรม เพื่อประมวลผลข้อมูล เก็บข้อมูลในหน่วยความจำขณะที่โปรแกรมทำงาน เช่น
                                     <br/>- พื้นที่จัดเก็บชื่อตัวเเปร
                                     <br/>- ชื่อ-คู่ค่า</p></span>
-								<h2>Valid Variable Names (ชื่อตัวเเปรที่ถูกต้อง)</h2>
+								<h2><b>Valid Variable Names (ชื่อตัวเเปรที่ถูกต้อง)</b></h2>
                                 <span class="tab"><p>- Fruit เเละ Fruit เป็นตัวแปรที่แตกต่างกัน
                                     <br/>- ต้องขึ้นต้นด้วยตัวอักษรสามารถมีตัวเลขตามหลังได้
                                     <br/>- สามารถมี Underscore ในชื่อตัวเเปรได้
                                     <br/>- ไม่สามรถใช้ + หรือ -</p></span>
-								<h2>Reserved word (คำสงวน)</h2>
-                                <table class="table-danger">
+								<h2 style="text-align: center;">Reserved word (คำสงวน)</h2>
+                                <table>
                                     <tbody>
                                         <tr>
                                             <td>and</td>
@@ -97,7 +97,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <h2>Data types (ชนิดข้อมูล)</h2>
+                                <h2><b>Data types (ชนิดข้อมูล)</b></h2>
                                 <p>
                                     <div><span class="tab">
                                         Basic Data Types :
@@ -153,9 +153,10 @@
                                         4. Set
                                     </div>
                                 </p>
-                                <h2>Number (ตัวเลข)</h2>
+                                <h2><b>Number (ตัวเลข)</h2></b>
                                 <p>ใช้ตัวเลขโดยตรงในซอร์สโค้ดของคุณ, อย่าใช้เครื่องหมายอัญประกาศเพราะใช้สำหรับสตริง
                                     <br/>- จำนวนเต็มเป็นตัวเลขที่ไม่มีทศนิยม
+                                    <h3 style="text-align: center;">Example (Number)</h3>
                                     <div class="text">
                                     <div><span class="tab"></span>
                                     integer = 42
@@ -168,8 +169,9 @@
                                     </div>
                                     </div>
                                 </p>
-                                <h2>Boolean (ค่าที่เป็นจริง)</h2>
+                                <h2><b>Boolean (ค่าที่เป็นจริง)</b></h2>
                                 <p>ตัวแปรบูลีนสามารถอ้างอิงค่าใดค่าหนึ่งจากสองค่า: True or False
+                                    <h3 style="text-align: center;">Example (Boolean)</h3>
                                     <div class="text">
                                         <div><span class="tab"></span>
                                         hungry = True
@@ -179,6 +181,7 @@
                                         </div>
                                         </div>
                                     <p>
+                                        <h3 style="text-align: center;">Example (Boolean)</h3>
                                         <div class="text">
                                             <div><span class="tab"></span>
                                             t = True
@@ -188,7 +191,7 @@
                                             </div>
                                             </div>
                                             <span class="tab"></span>= bool
-
+                                            <h3 style="text-align: center;">Example (Boolean)</h3>
                                             <div class="text">
                                                 <div><span class="tab"></span>
                                                 f = Fasle
@@ -203,8 +206,9 @@
                                                 <span class="tab"></span>= False
                                     </p>
                                 </p>
-                                <h2>String (ตัวอักษร)</h2>
+                                <h2><b>String (ตัวอักษร)</b></h2>
                                 <p>เเสดงข้อความเเละล้อมรอบด้วยคำพูด
+                                    <h3 style="text-align: center;">Example (String)</h3>
                                     <div class="text">
                                         <div><span class="tab"></span>
                                         fruit = 'apple'
@@ -217,6 +221,7 @@
                                         </div>
                                         </div>
                                     <p>การใช้เครื่องหมายคำพูดภายในสตริง
+                                    <h3 style="text-align: center;">Example (String)</h3>
                                     <div class="text">
                                         <div><span class="tab"></span>
                                         sentence = 'She said, "That is a great tasting apple!"'
@@ -233,10 +238,10 @@
                                     </div>
                                     </p>
                                 </p>
-                                <h2>Operators (ตัวดำเนินการ)</h2>
+                                <h2><b>Operators (ตัวดำเนินการ)</b></h2>
                                 <p><span class="tab"></span>Operators (ตัวดำเนินการ) คือกลุ่มของเครื่องหมายหรือสัญลักษณ์ที่ใช้ทำงานเหมือนกับฟังก์ชัน แต่แตกต่างกันตรงไวยากรณ์หรือความหมายในการใช้งาน ในภาษา Python นั้นสนับสนุนตัวดำเนินการประเภทต่างๆ สำหรับการเขียนโปรแกรม เช่น ตัวดำเนินการ + เป็นตัวดำเนินการทางคณิตศาสตร์ที่ใช้สำหรับการบวกตัวเลขเข้าด้วยกัน หรือตัวดำเนินการ > เป็นตัวดำเนินการเพื่อให้เปรียบเทียบค่าสองค่า
+                                    <h2 style="text-align: center;">Arithmetic Operators</h2>
                                     <div style="text-align: center;">
-                                        <br/>Arithmetic Operators
                                         <table class="table-danger">
                                             <tbody>
                                                 <tr>
@@ -281,8 +286,8 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        Example
                                     </div>
+                                    <h3 style="text-align: center;">Example (Arithmetic Operators)</h3>
                                     <div class="text">
                                         <div><span class="tab"></span>
                                         x = 15
@@ -312,8 +317,8 @@
                                         print('x ** y =' ,x**y) ---> x ** y = 50625
                                         </div>
                                     </div>
+                                    <h2 style="text-align: center;">Comparison Operators</h2>
                                     <div style="text-align: center;">
-                                        <br/>Comparison Operators
                                         <table class="table-danger">
                                             <tbody>
                                                 <tr>
@@ -353,8 +358,8 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        Example
                                     </div>
+                                    <h3 style="text-align: center;">Example (Comparison Operators)</h3>
                                     <div class="text">
                                         <div><span class="tab"></span>
                                         x = 5
@@ -381,8 +386,8 @@
                                         print('x <= y is',x>y) ---> x <= y is True
                                         </div>
                                     </div>
+                                    <h2 style="text-align: center;">logical Operators</h2>
                                     <div style="text-align: center;">
-                                        <br/>Logical Operators
                                         <table class="table-danger">
                                             <tbody>
                                                 <tr>
@@ -406,7 +411,7 @@
                                                     <td>not x</td>
                                             </tbody>
                                         </table>
-                                        Example
+                                        <h3 style="text-align: center;">Example (logical Operators)</h3>
                                     </div>
                                     <div class="text">
                                         <div><span class="tab"></span>
@@ -425,9 +430,9 @@
                                         print('x not y is',x not y) --->not x is False
                                         </div>
                                     </div>
+                                    <h2 style="text-align: center;">Bitwise Operators</h2>
+                                    <p style="text-align: center;">In the table below:Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)</p>
                                     <div style="text-align: center;">
-                                        <br/>Bitwise Operators
-                                        <br/>In the table below:Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)
                                         <table class="table-danger">
                                             <tbody>
                                                 <tr>
@@ -468,8 +473,8 @@
                                             </tbody>
                                         </table>
                                     </div>
+                                    <h2 style="text-align: center;">Indentity Operators</h2>
                                     <div style="text-align: center;">
-                                        <br/>Identity Operators
                                         <table class="table-danger">
                                             <tbody>
                                                 <tr>
@@ -489,8 +494,8 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        Example
                                     </div>
+                                    <h3 style="text-align: center;">Example (Indentity Operators)</h3>
                                     <div class="text">
                                         <div><span class="tab"></span>
                                         x1 = 5
@@ -520,8 +525,8 @@
                                         print(x3 is y3) ---> False
                                          </div>
                                     </div>
+                                    <h2 style="text-align: center;">Membership Operators</h2>
                                     <div style="text-align: center;">
-                                        <br/>Membership Operators
                                         <table class="table-danger">
                                             <tbody>
                                                 <tr>
@@ -541,8 +546,8 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        Example
                                     </div>
+                                    <h3 style="text-align: center;">Example (Membership Operators)</h3>
                                     <div class="text">
                                         <div><span class="tab"></span>
                                         x = 'Hello world'
@@ -564,11 +569,11 @@
                                         </div>
                                     </div>
                                 </p>
-                                <h2>Input (ป้อนข้อมูล)</h2>
+                                <h2><b>Input (ป้อนข้อมูล)</b></h2>
                                 <p><span class="tab"></span>ฟังก์ชั่น Input ในตัวของ Python เพื่ออ่าน Input จากแป้นพิมพ์ ฟังก์ชัน Input จะอ่านข้อมูลบางส่วนที่ป้อนที่แป้นพิมพ์และส่งคืนข้อมูลดังกล่าวเป็น String กลับไปยังโปรแกรม คุณใช้ฟังก์ Input คำสั่งการมอบหมายที่เป็นไปตามรูปแบบทั่วไปนี้
                                 <br/>variable = input(prompt)
+                                <h3 style="text-align: center;">Example (Input)</h3>
                                 <div style="text-align: center;">
-                                    <br/>Example
                                 </div>
                                 <div class="text">
                                     <div><span class="tab"></span>
@@ -581,8 +586,8 @@
                                     print('Hello', first_name, last_name)
                                     </div>
                                 </div>
+                                <h3 style="text-align: center;">Resultant (Input)</h3>
                                 <div style="text-align: center;">
-                                    <br/>ผลลัพธ์
                                 </div>
                                 <div class="text">
                                     <div><span class="tab"></span>
@@ -631,8 +636,8 @@
                                     print(c, b, a)
                                     </div>
                                 </div>
+                                <h3 style="text-align: center;">Resultant (ใส่หลายค่าในหนึ่ง input)</h3>
                                 <div style="text-align: center;">
-                                    <br/>ผลลัพธ์
                                 </div>
                                 <div class="text">
                                     <div><span class="tab"></span>
@@ -643,7 +648,7 @@
                                     </div>
                                 </div>
                                 </p>
-                                <h2>Comments (ความคิดเห็น)</h2>
+                                <h2><b>Comments (ความคิดเห็น)</b></h2>
                                 <p><span class="tab"></span>ความคิดเห็นเป็นบันทึกคำอธิบายว่าเอกสารบรรทัดหรือส่วนของโปรแกรม
                                     <div class="text">
                                         <div><span class="tab"></span>
@@ -718,21 +723,6 @@
     display: inline-block;
     margin-left: 40px;
     }
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
 .text {
   background-color: rgb(245, 169, 213);
   color: white;

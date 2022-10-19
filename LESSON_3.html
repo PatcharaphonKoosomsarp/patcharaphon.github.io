@@ -28,9 +28,9 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
-								<h2>Repetition Structure</h2>
+								<h2><b>Repetition Structure</b></h2>
 								<p><span class="tab"></span>โครงสร้างแบบวนซ้ำ, โครงสร้างการทำงานที่มีการทำงานในบางคำสั่งหรือบางชุดของคำสั่งซ้ำกันมากกว่าหนึ่งรอบขึ้นไป โดยการวนซ้ำนี้จะต้องมีการตัดสินใจร่วมอยู่ด้วยเสมอ เพื่อเป็นเงื่อนไขที่จะตัดสินใจว่าเมื่อใดจะวนซ้ำ หรือเมื่อใดจะถึงเวลาหยุดการวนซ้ำ</p>
-								<h2>While Loop</h2>
+								<h2><b>While Loop</b></h2>
 								<p><span class="tab"></span>While เป็นคำสั่งวนซ้ำที่มีการตรวจสอบเงื่อนไข (condition) ก่อนเข้าทำงานเสมอ เมื่อเงื่อนไขที่
                                     ทำการตรวจสอบเป็นจริง จึงจะประมวลผลคำสั่งหลัง while แต่ถ้าเงื่อนไขเป็นเท็จจะยุติการทำงานทันที
                                     สำหรับงานที่นิยมใช้while ในการแก้ปัญหาคือ ปัญหาที่ไม่ทราบจำนวนรอบการท างานที่แน่นอนหรือ
@@ -39,6 +39,7 @@
                                     เช่น ESC, q, -1, 0 เป็นต้น หรือตรวจสอบค่าในตัวแปรตัวใดตัวหนึ่งในโปรแกรมเป็นเท็จ
                                     โครงสร้างการทำงาน while loop มีรูปแบบคำสั่งดังนี้
                                 </p>
+                                <h3 style="text-align: center;">Example (While Loop)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     While condition
@@ -56,18 +57,21 @@
                                     statement(s)
                                     </div>
                                 </div>
-                                <h2>ตัวอย่าง Flowchart</h2>
-                                <image src="images/รูปภาพ5.png"></image>
-                                <h2>ตัวอย่าง โปรเเกรม</h2>
+                                <h3 style="text-align: center;">ตัวอย่าง Flowchart</h2>
+                                    <div style="text-align: center;">
+                                      <image src="images/รูปภาพ5.png" alt=""></image>
+                                    </div>
+                                    <h3 style="text-align: center;">ตัวอย่างโปรเเกรม</h2>
 
 
 
-                                <h2>For Loop</h2>
+                                <h2><b>For Loop</b></h2>
                                 <p><span class="tab"></span>คำสั่ง for เป็นคำสั่งที่ใช้สำหรับการทำซ้ำ เช่นเดียวกับ while และต้องมีการตรวจสอบเงื่อนไข
                                     ก่อนเข้าลูปเหมือนกัน แต่แตกต่างกันตรงที่ for จะตรวจสอบรายการแบบลำดับแทน (Item of
                                     sequence) เช่น ข้อมูลชนิดสตริง ลิสต์ หรือทัพเพิล เป็นต้น โครงสร้างการทำงาน for loop มีรูปแบบ
                                     คำสั่งดังนี้
                                 </p>
+                                <h3 style="text-align: center;">Example (For Loop)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for iterating var in sequence:
@@ -76,9 +80,13 @@
                                     statement(s)
                                     </div>
                                 </div>
-                                <h2>ตัวอย่าง Flowchart</h2>
-                                <image src="images/รูปภาพ6.png"></image>
-                                <h2>Range (start, stop, step)</h2>
+                                <h3 style="text-align: center;">ตัวอย่าง Flowchart</h2>
+                                    <div style="text-align: center;">
+                                      <image src="images/รูปภาพ6.png" alt=""></image>
+                                    </div>
+
+                                <h2><b>Range (start, stop, step)</b></h2>
+                                <h3 style="text-align: center;">Example (Range (start, stop, step))</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for variable in [start, stop, step]:
@@ -93,6 +101,7 @@
                                     etc.
                                     </div>
                                 </div>
+                                <h3 style="text-align: center;">Example (Range (start, stop, step))</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for variable in [start, stop, step]:
@@ -107,6 +116,7 @@
                                     etc.
                                     </div>
                                 </div>
+                                <h3 style="text-align: center;">Example (Range (start, stop, step))</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for a in range(100):
@@ -118,19 +128,19 @@
                                     for a in range(1,100,2):
                                     </div>
                                 </div>
-                                <h2>ตัวอย่าง Flowchart</h2>
-                                <image src="images/"></image>
 
 
 
-                                <h2>Calculating Running Total</h2>
+                                <h2><b>Calculating Running Total</b></h2>
                                 <p><span class="tab"></span>ยอดรวมคือผลรวมของตัวเลขที่สะสมจากการวนซ้ำแต่ละครั้ง ตัวแปรที่ใช้เก็บยอดรวมเรียกว่าตัวสะสม</p>
                                 <p><span class="tab"></span>โปรแกรมที่คำนวณผลรวมของชุดตัวเลขมักใช้สององค์ประกอบ:</p>
-                                <p><span class="tab"></span>- วงวนที่อ่านแต่ละตัวเลขในชุด</p>
-                                <p><span class="tab"></span>- ตัวแปรที่สะสมตัวเลขทั้งหมดเมื่ออ่าน</p>
-                                <h2>ตัวอย่าง Flowchart</h2>
-                                <image src="images/รูปภาพ7.png"></image>
-                                <h2>ตาราง</h2>
+                                <p><span class="tab"></span><span class="tab"></span>- วงวนที่อ่านแต่ละตัวเลขในชุด</p>
+                                <p><span class="tab"></span><span class="tab"></span>- ตัวแปรที่สะสมตัวเลขทั้งหมดเมื่ออ่าน</p>
+                                <h3 style="text-align: center;">ตัวอย่าง Flowchart</h2>
+                                    <div style="text-align: center;">
+                                      <image src="images/รูปภาพ7.png" alt=""></image>
+                                    </div>
+                                <h2 style="text-align: center;">Calculating Running Total</h2>
                                 <table class="table-danger">
                                     <tbody>
                                         <tr>
@@ -165,6 +175,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                                <h2 style="text-align: center;">Calculating Running Total</h2>
                                 <table class="table-danger">
                                     <tbody>
                                         <tr>
@@ -199,7 +210,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <h3 style="text-align: center;">Example (Calculating Running Total)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
@@ -220,7 +231,7 @@
                                     print('The sum is',sum)
                                     </div>
                                 </div>
-                                <h2>ผลลัพธ์</h2>
+                                <h3 style="text-align: center;">Resultant (Calculating Running Total)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     6
@@ -254,10 +265,11 @@
                                     </div>
                                 </div>
 
-                                <h2>Sentinel</h2>
+                                <h2><b>Sentinel</b></h2>
                                 <p>Sentinel เป็นค่าพิเศษที่ทำเครื่องหมายจุดสิ้นสุดของลำดับของค่า</p>
                                 <p><span class="tab"></span>- เพียงถามผู้ใช้เมื่อสิ้นสุดการวนซ้ำแต่ละครั้ง หากมีค่าอื่นที่ต้องดำเนินการ อย่างไรก็ตาม หากลำดับของค่ายาว อย่างไรก็ตาม การถามคำถามนี้เมื่อสิ้นสุดการวนซ้ำแต่ละครั้งอาจทำให้โปรแกรมยุ่งยากสำหรับผู้ใช้</p>
                                 <p><span class="tab"></span>- ถามผู้ใช้ที่จุดเริ่มต้นของโปรแกรมว่ามีกี่รายการในลำดับ อย่างไรก็ตาม สิ่งนี้อาจทำให้ผู้ใช้ไม่สะดวก หากลำดับนั้นยาวมากและผู้ใช้ไม่ทราบจำนวนรายการที่อยู่ในนั้น ผู้ใช้จะต้องนับจำนวนรายการนั้น</p>
+                                <h3 style="text-align: center;">Example (Sentinel)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     loop = 'y'
@@ -284,7 +296,7 @@
                                     loop = input('Again? (Enter y for yes):')
                                     </div>
                                 </div>
-                                <h2>ผลลัพธ์</h2>
+                                <h3 style="text-align: center;">Resultant (Sentinel)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     Enter a number 1
@@ -306,7 +318,7 @@
                                     </div>
                                 </div>
                                 
-                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <h3 style="text-align: center;">Example (Sentinel)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     rows = int(input('How many rows?:'))
@@ -327,7 +339,7 @@
                                     print('')
                                     </div>
                                 </div>
-                                <h2>ผลลัพธ์</h2>
+                                <h3 style="text-align: center;">Resultant (Sentinel)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     How many rows?:5
@@ -349,9 +361,9 @@
                                     </div>
                                 </div>
                                 
-                                <h2>Input Validation Loops</h2>
+                                <h2><b>Input Validation Loops</b></h2>
                                 <p><span class="tab"></span>การตรวจสอบความถูกต้องของข้อมูลเข้าเป็นกระบวนการตรวจสอบข้อมูลที่ป้อนเข้าสู่โปรแกรม เพื่อให้แน่ใจว่าถูกต้องก่อนที่จะนำไปใช้ในการคำนวณ การตรวจสอบความถูกต้องของอินพุตมักทำโดยใช้ลูปที่วนซ้ำตราบเท่าที่ตัวแปรอินพุตอ้างอิงข้อมูลที่ไม่ถูกต้อง</p>
-                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <h3 style="text-align: center;">Example (Input Validation Loops)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     score = int(input('Enter a test score: '))
@@ -369,7 +381,7 @@
                                     score = int(input('Enter a test score: '))
                                     </div>
                                 </div>
-                                <h2>ผลลัพธ์</h2>
+                                <h3 style="text-align: center;">Resultant (Input Validation Loops)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     Enter a test score: -1
@@ -388,9 +400,9 @@
                                     </div>
                                 </div>
                             
-                                <h2>Nested loops</h2>
+                                <h2><b>Nested loops</b></h2>
                                 <p><span class="tab"></span>ไพธอนให้ผู้เขียนโปรแกรมสามารถใช้ลูปซ้อนได้ (การวาง for loop ไว้ภายใน for loop) มีรูปแบบคำสั่งดังนี้</p>
-                                <h2>ลูปซ้อนของ for</h2>
+                                <h3 style="text-align: center;">ลูปซ้อนของ for</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for iterating_var insequence:
@@ -405,7 +417,7 @@
                                     statements(s)
                                     </div>
                                 </div>
-                                <h2>ลูปซ้อนของ while</h2>
+                                <h3 style="text-align: center;">ลูปซ้อนของ while</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     while expression:
@@ -420,7 +432,7 @@
                                     statements(s)
                                     </div>
                                 </div>
-                                <h2>ลูปซ้อนของ for กับ while</h2>
+                                <h3 style="text-align: center;">ลูปซ้อนของ for กับ while</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for iterating_var insequence:
@@ -442,7 +454,7 @@
                                     ไพธอนก็ได้ เพราะการไม่มีเครื่องหมายบอกขอบเขต ทำให้บางครั้งต้องใช้สายตาในการหาขอบเขตของ
                                     คำสั่งเอง พิจารณาจากโปรแกรมต่อไปนี้
                                     </p>
-                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                    <h3 style="text-align: center;">Example (Nested loops)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for i in range(1, 10):
@@ -457,12 +469,14 @@
                                     print("For loop for j")
                                     </div>
                                 </div>
-                                <h2>Continue , Break , Pass</h2>
+                                <h2><b>Continue , Break , Pass</b></h2>
                                 <h2>Continue</h2>
                                 <p><span class="tab"></span>เป็นคำสั่งที่สั่งให้โปรแกรมกลับไปเริ่มต้นใหม่ที่ต้น loop ซึ่งส่งผลให้คำสั่งที่เหลือทั้งหมดหลังคำสั่ง continue และอยู่ภายในขอบเขตของคำสั่งทำซ้ำ จะไม่ถูกประมวลผลในรอบนั้นๆ ไปด้วย (แต่ไม่ได้ออกจากคำสั่งการทำซ้ำ) คำสั่ง continue จะใช้ได้ทั้ง while และ for loop สำหรับแผนผังจำลองการทำงานของ continue</p>
-                                <h2>ตัวอย่าง Flowchart</h2>
-                                <image src="images/รูปภาพ8.png"></image>
-                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <h3 style="text-align: center;">Example Flowchart</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ8.png"></image>
+                                </div>
+                                <h3 style="text-align: center;">Example (Continue)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for letter in 'Patcharaphon Koosomsarp':
@@ -477,7 +491,7 @@
                                     print ('Current Letter :', letter)
                                     </div>
                                 </div>
-                                <h2>ผลลัพธ์</h2>
+                                <h3 style="text-align: center;">Resultant (Continue)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     Current Letter : P
@@ -539,9 +553,11 @@
                                 </div>
                                 <h2>Break</h2>
                                 <p><span class="tab"></span>เป็นคำสั่งที่สั่งให้โปรแกรมยุติการทำซ้ำ (Loop) ซึ่งส่งผลให้คำสั่งที่เหลือทั้งหมด หลังคำสั่ง break และอยู่ภายในขอบเขตของคำสั่งทำซ้ำ ไม่ถูกประมวลผลไปด้วย เมื่อออกจากขอบเขตของคำสั่งการทำซ้ำปัจจุบันแล้ว โปรแกรมจะประมวลคำสั่งอื่นๆ ต่อไป (ไม่ใช่การจบการทำงานของ โปรแกรม จะยุติการทำงานเฉพาะคำสั่งใน Loop ปัจจุบันเท่านั้น) สำหรับการทำงานของคำสั่ง break ใน nested loop เมื่อโปรแกรมยุติการทำงานใน Loop ปัจจุบันแล้ว โปรแกรมจะทำงานต่อใน Loop ที่ครอบ Loop ปัจจุบันอยู่ต่อไป คำสั่ง break จะใช้ทำงานกับ while และ for loop เท่านั้น ไม่สามารถใช้ได้กับ if, if-else, if-elif ได้เหมือนในภาษาซีสำหรับแผนผังจำลองการทำงานของ break</p>
-                                <h2>ตัวอย่าง Flowchart</h2>
-                                <image src="images/รูปภาพ9.png"></image>
-                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <h3 style="text-align: center;">Example Flowchart</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ9.png"></image>
+                                </div>
+                                <h3 style="text-align: center;">Example (Break)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for letter in 'Patcharaphon Koosomsarp':
@@ -556,7 +572,7 @@
                                     print ('Current Letter :', letter)
                                     </div>
                                 </div>
-                                <h2>ผลลัพธ์</h2>
+                                <h3 style="text-align: center;">Resultant (Break)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     Current Letter : P
@@ -585,7 +601,7 @@
                                 </div>
                                 <h2>Pass</h2>
                                 <p><span class="tab"></span>เป็นคำสั่งที่มีไว้เพื่อรักษาโครงสร้างหรือ ความหมายของโปรแกรมไว้เช่น กรณีที่ผู้เขียนโปรแกรมกำลังเขียนโปรแกรมอยู่ แต่ปรากฎว่าในบางจุด ของโปรแกรม ผู้เขียนยังไม่แน่ใจว่าจะดำเนินการต่ออย่างไรและต้องการยกเว้นโปรแกรมตรงส่วนนี้ไว้ ก่อน (ใส่ comment ก็พอใช้ได้เหมือนกัน) แล้วจึงค่อยมาแก้ไขในภายหลัง ผู้เขียนโปรแกรมสามารถ บรรจุคำสั่ง pass นี้ไว้เพื่อให้โปรแกรมสามารถทดสอบรันโปรแกรมได้และประมวลผลโปรแกรมในส่วนที่ ละเว้นไว้ด้วย ซึ่งคำสั่ง pass จะไม่มีการประมวลผลใดๆ เกิดขึ้น (คล้ายคำสั่ง No operation ในภาษา แอสแซมบลี) และเมื่อไม่ต้องการใช้งานคำสั่งดังกล่าวแล้ว ไม่จำเป็นต้องลบทิ้งก็ได้ (แต่ควรลบจะดีกว่า) สำหรับตัวอย่างการใช้งานคำสั่ง pass</p>
-                                <h2>ตัวอย่างโปรเเกรม</h2>
+                                <h3 style="text-align: center;">Example (Pass)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for letter in 'Patcharaphon Koosomsarp':
@@ -600,7 +616,7 @@
                                     print ('Current Letter :', letter)
                                     </div>
                                 </div>
-                                <h2>ผลลัพธ์</h2>
+                                <h3 style="text-align: center;">Resultant (Pass)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     Current Letter : P
@@ -725,21 +741,6 @@
         display: inline-block;
         margin-left: 40px;
         }
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-    
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
     .text {
       background-color: rgb(245, 169, 213);
       color: white;
