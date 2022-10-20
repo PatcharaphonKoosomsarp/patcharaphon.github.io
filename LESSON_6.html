@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+
+                        <meta charset="utf-8">
+							<link rel="preconnect" href="https://fonts.googleapis.com">
+							<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+							<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap" rel="stylesheet">
+							<style>
+								body {
+									font-family: 'Bai Jamjuree', sans-serif;
+									font-size: 20px;
+								}
+							</style>
+
+						<h1>LESSON 6</h1>
+						<p>Files and Exceptions</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2><b>File</b></h2>
+								<p><span class="tab"></span>แฟ้มข้อมูล (File) หมายถึง ข้อสนเทศหรือข้อมูลที่มีขนาดเล็กที่สุดที่คอมพิวเตอร์สามารถแสดง ให้ผู้ใช้เห็นได้ โดยจัดเก็บข้อมูลในลักษณะระเบียบ (Record) แฟ้มจะถูกจัดเก็บอยู่ในหน่วยความจำ</p>
+                                <p>เเฟ้มข้อมูล เเบ่งออกเป็น 2 ประเภทใหญ่ๆ คือ
+                                </br><span class="tab"></span>1) แฟ้มข้อความ (Text file) สำหรับเก็บ ตัวอักษร ตัวเลข หรือข้อความ ที่สามารถอ่านทำความ เข้าใจได้ตัวอย่างแฟ้มข้อมูล เช่น .txt, .doc, .ini, .xml, .c, .py เป็นต้น 
+                                </br><span class="tab"></span>2) แฟ้มไบนารี่ (Binary file) สำหรับใช้เก็บข้อมูลระบบ หรือคำสั่งของคอมพิวเตอร์ระดับล่างสุด และส่วนใหญ่ไม่สามารถอ่านทำความเข้าใจได้ ตัวอย่างแฟ้มข้อมูลประเภทนี้ เช่น .exe, .com, .msi, .mp3, .wmv, .dat, .zip, .class หรือ .o เป็นต้น</p>
+                                <h2><b>FILE INPUT/OUTPUT</b></h2>
+								<p><span class="tab"></span>-For program to retain data between the times it is run, you must save
+                                    the data</p>
+                                <p><span class="tab"></span><span class="tab"></span>-Data is saved to a file, typically on computer disk</p>
+                                <p><span class="tab"></span><span class="tab"></span>-Saved data can be retrieved and used at a later time</p>
+                                <p><span class="tab"></span>-"Writing data to" : saving data on a file</p>
+                                <p><span class="tab"></span>-Output file: a file that data is written to</p>
+                                <p><span class="tab"></span>-"Reading data from" : process of retrieving data from a file</p>
+                                <p><span class="tab"></span>-Input file: a file from which data is read</p>
+                                <h2><b>WRITE DATA TO FILE</b></h2>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ36.png" alt=""></image>
+                                </div>
+                                <h2><b>READ DATA FROM FILE</b></h2>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ37.png" alt=""></image>
+                                </div>
+                                <h2><b>TYPE OF FILES</b></h2>
+                                <p><span class="tab"></span>In general, two types of files</p>
+                                <p><span class="tab"></span><span class="tab"></span>1. Text file: contains data that has been encoded as text</p>
+                                <p><span class="tab"></span><span class="tab"></span>2. Binary file: contains data that has not been converted to text</p>
+                                <p><span class="tab"></span>Two ways to access data stored in file</p>
+                                <p><span class="tab"></span><span class="tab"></span>1. Sequential access: file read sequentially from beginning to end, can't skip ahead</p>
+                                <p><span class="tab"></span><span class="tab"></span>2. Direct access: can jump directly to any piece of data in the file</p>
+                                <h2><b>FILE</b></h2>
+                                <p><span class="tab"></span>There are always three steps that must be taken when a file is used by a program.</p>
+                                <p><span class="tab"></span><i><u>-Open the file</u></i> - Opening a file creates a connection between the file and the program. Opening an output file usually creates the file on the disk and allows the program to write data to it. Opening an input file allows the program to read data from the file.</p>
+                                <p><span class="tab"></span><i><u>-Process the file</u></i> - In this step data is either written to the file (if it is an output file) or read from the file (if it is an input file).</p>
+                                <p><span class="tab"></span><i><u>-Close the file</u></i> - When the program is finished using the file, the file must be closed.Closing a file disconnects the file from the program.</p>
+
+                                <h2><b>Input / Output</b></h2>
+                                <h3><b>OPEN FILE</b></h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ38.png" alt=""></image>
+                                </div>
+                                <h3><b>FILE MODE</b></h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>Mode</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>'r'</td>
+                                            <td>Open a file for reading only. The file cannot be changed or written to.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>'w'</td>
+                                            <td>Open a file for Writing. If the file already exists, erase its contents. If it does not exist, create it.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>'a'</td>
+                                            <td>Oepn a file to be written to. All data written to the file will be appended to its end. If the file does not exist, create it.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม FILEWRITE.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ39.png" alt=""></image>
+                                </div>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม FILEREAD.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ40.png" alt=""></image>
+                                </div>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม READLINE.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ41.png" alt=""></image>
+                                </div>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม STRIP_NEWLINE.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ42.png" alt=""></image>
+                                </div>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม WRITE_NAME.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ43.png" alt=""></image>
+                                </div>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม WRITE_NUMBERS.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ44.png" alt=""></image>
+                                </div>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม READ_NUMBERS.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ45.png" alt=""></image>
+                                </div>
+
+                                <h2><b>Using Loop to Process File</b></h2>
+                                <h3><b>DETECTING END OF FILE</b></h3>
+                                <p><span class="tab"></span>Open the file</p>
+                                <p><span class="tab"></span>Use readline to read the first line from the file</p>
+                                <p><span class="tab"></span>While the value returned from readline is not an empty string:</p>
+                                <p><span class="tab"></span><span class="tab"></span>Process the item that was just read from the file.</p>
+                                <p><span class="tab"></span><span class="tab"></span>Use readline to read the next line from the file.</p>
+                                <p><span class="tab"></span>Close the file</p>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ46.png" alt=""></image>
+                                </div>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม WRITE_SALES.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ47.png" alt=""></image>
+                                </div>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม READ_SALES.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ48.png" alt=""></image>
+                                </div>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม READ_SALES2.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ49.png" alt=""></image>
+                                </div>
+
+                                <h2><b>Processing Record</b></h2>
+                                    <p><span class="tab"></span><i><u>-Record:</u></i> set of data that describes one item</p>
+                                    <p><span class="tab"></span><i><u>-Field:</u></i> single piece of data within a record</p>
+                                    <p><span class="tab"></span>-Write record to sequential access file by writing the fields one after the other</p>
+                                    <p><span class="tab"></span>-Read record from sequential access file by reading each field until record complete</p>
+                                    <div style="text-align: center;">
+                                        <image src="images/รูปภาพ50.png" alt=""></image>
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <image src="images/รูปภาพ51.png" alt=""></image>
+                                    </div>
+                                <h2><b>When working with records, it is also important to be able to:</b></h2>
+                                    <p><span class="tab">-Add records</span></p>
+                                    <p><span class="tab">-Display records</span></p>
+                                    <p><span class="tab">-Search for a specific record</span></p>
+                                    <p><span class="tab">-Modify records</span></p>
+                                    <p><span class="tab">-Delete records</span></p>
+                                    <h3 style="text-align: center;">ตัวอย่างโปรเเกรม SAVE_EMP_RECORDS.PY</h3>
+                                    <div style="text-align: center;">
+                                        <image src="images/รูปภาพ52.png" alt=""></image>
+                                    </div>
+                                    <h3 style="text-align: center;">IMPORT OS</h3>
+                                    <div style="text-align: center;">
+                                        <image src="images/รูปภาพ53.png" alt=""></image>
+                                    </div>
+
+                                <h2><b>Exceptions</b></h2>
+                                    <p><span class="tab"></span><i><u>-Exception:</u></i> error that occurs while a program is running</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Usually causes program to abruptly halt</p>
+                                    <p><span class="tab"></span><i><u>-Traceback:</u></i> error message that gives information regarding line numbers that caused the exception</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Indicates the type of exception and brief description of the error that caused exception to be raised</p>
+                                    <p><span class="tab"></span><i><u>-Exception handler:</u></i> code that responds when exceptions are raised and prevents program from crashing</p>
+                                    <p><span class="tab"></span>-In Python, written as try/except statement</p>
+                                    <p><span class="tab"></span><span class="tab"></span>General format:</p>
+                                    <div class="text">
+                                        <div><span class="tab"></span>
+                                        try:
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                        statements
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        except exceptionName:
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                        statements
+                                        </div>
+                                    </div>
+                                    <p><span class="tab"></span><i><u>-Try suite:</u></i> statements that can potentially raise an exception</p>
+                                    <p><span class="tab"></span><i><u>-Handler:</u></i> statements contained in except block</p>
+                                    <p><span class="tab"></span>Many exceptions can be prevented by careful coding</p>
+                                    <p><span class="tab"></span><span class="tab"></span><i><u>-Example:</u></i> input validation</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Usually involve a simple decision construct</p>
+                                    <p><span class="tab"></span>Some exceptions cannot be avoided by careful coding</p>
+                                    <p><span class="tab"></span><span class="tab"></span>Example:</p>
+                                    <p><span class="tab"></span><span class="tab"></span><span class="tab"></span>-Trying to convert non-numeric string to an integer</p>
+                                    <p><span class="tab"></span><span class="tab"></span><span class="tab"></span>-Trying to open for reading a file that doesn't exist</p>
+                                    <p><span class="tab"></span>If statement in try suite raises exception:</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Exception specified in except clause:</p>
+                                    <p><span class="tab"></span><span class="tab"></span><span class="tab"></span>-Handler immediately following except clause executes</p>
+                                    <p><span class="tab"></span><span class="tab"></span><span class="tab"></span>-Continue program after try/except statement</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Other exceptions:</p>
+                                    <p><span class="tab"></span><span class="tab"></span><span class="tab"></span>-Program halts with traceback error message</p>
+                                    <p><span class="tab"></span>-If no exception is raised, handlers are skipped</p>
+                                    <h3 style="text-align: center;">ตัวอย่างโปรเเกรม GROSS_PAY1.PY</h3>
+                                    <div style="text-align: center;">
+                                        <image src="images/รูปภาพ54.png" alt=""></image>
+                                    </div>
+                                    <h3 style="text-align: center;">ตัวอย่างโปรเเกรม GROSS_PAY2.PY</h3>
+                                    <div style="text-align: center;">
+                                        <image src="images/รูปภาพ55.png" alt=""></image>
+                                    </div>
+                                <h2><b>HANDLING MULTIPLE EXCEPTIONS</b></h2>
+                                <p><span class="tab"></span>-Often code in try suite can throw more than one type of exception</p>
+                                <p><span class="tab"></span><span class="tab"></span>-Need to write except clause for each type of exception that needs to be handled</p>
+                                <p><span class="tab"></span>-An except clause that does not list a specific exception will handle any exception that is raised in the try suite</p>
+                                <p><span class="tab"></span><span class="tab"></span>-Should always be last in a series of except clauses</p>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม SALE_REPORT.PY</h3>
+                                    <div style="text-align: center;">
+                                        <image src="images/รูปภาพ56.png" alt=""></image>
+                                    </div>
+                                <h2><b>DISPLAYING AN EXCEPTION'S DEFAULT ERROR MESSAGE</b></h2>
+                                <p><span class="tab"></span>-Exception object: object created in memory when an exception is thrown</p>
+                                <p><span class="tab"></span><span class="tab"></span>-Usually contains default error message pertaining to the exception</p>
+                                <p><span class="tab"></span><span class="tab"></span>-Can assign the exception object to a variable in an except clause</p>
+                                <p><span class="tab"></span><span class="tab"></span><span class="tab"></span>-Example: except ValueError as err:</p>
+                                <p><span class="tab"></span><span class="tab"></span>-Can pass exception object variable to print function to display the default error message</p>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม GROSS_PAY3.PY</h3>
+                                    <div style="text-align: center;">
+                                        <image src="images/รูปภาพ57.png" alt=""></image>
+                                    </div>
+                                    <h2><b>DISPLAYING AN EXCEPTION'S DEFAULT ERROR MESSAGE</b></h2>
+                                    <p><span class="tab"></span>-try/except statement may include an optional else clause, which appears after all the except clauses</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Aligned with try and except clauses</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Syntax similar to else clause in decision structure</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Else suite: block of statements executed after statements in try suite, only if no exceptions were raised</p>
+                                    <p><span class="tab"></span><span class="tab"></span><span class="tab"></span>-If exception was raised, the else suite is skipped</p>
+                                    <h3 style="text-align: center;">ตัวอย่างโปรเเกรม SALE_REPORT4.PY</h3>
+                                    <div style="text-align: center;">
+                                        <image src="images/รูปภาพ58.png" alt=""></image>
+                                    </div>
+                                    <h2><b>THE FINALLY CLAUSE</b></h2>
+                                    <p><span class="tab"></span>-try/except statement may include an optional finally clause, which appears after all the except clauses</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Aligned with try and except clauses</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-General format:</p>
+                                    <div class="text">
+                                        <div><span class="tab"></span>
+                                        finally:
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        statements
+                                        </div>
+                                    </div>
+                                    <p><span class="tab"></span>-Finally suite: block of statements after the finally clause</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Execute whether an exception occurs or not</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Purpose is to perform cleanup before exiting</p>
+                                    <h2><b>TRY-EXCEPT-FINALLY</b></h2>
+                                    <div class="text">
+                                        <div><span class="tab"></span>
+                                        try:
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                        statements
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                            statements
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                        statements
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                        etc.
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        except ExceptionName:
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                        statements
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                        statements
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                        etc.
+                                        </div>
+                                        <div><span class="tab"></span>
+                                        finally:
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                        statements
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                        statements
+                                        </div>
+                                        <div><span class="tab"></span><span class="tab"></span>
+                                        etc.
+                                        </div>
+                                    </div>
+                                    <h3 style="text-align: center;">ตัวอย่างโปรเเกรม TRY-EXCEPT-FINALLY.PY</h3>
+                                    <div style="text-align: center;">
+                                        <image src="images/รูปภาพ59.png" alt=""></image>
+                                    </div>
+                                    <h2><b>WHAT IF AN EXCEPTION IS NOT HANDLED?</b></h2>
+                                    <p><span class="tab"></span>-Two ways for exception to go unhandled:</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-No except clause specifying exception of the right type</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Exception raised outside a try suite</p>
+                                    <p><span class="tab"></span>-In both cases, exception will cause the program to halt</p>
+                                    <p><span class="tab"></span><span class="tab"></span>-Python documentation provides information about exceptions that can be raised by 	different functions</p>
+                                
+                            </section>
+                            
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<style>
+    .tab {
+        display: inline-block;
+        margin-left: 40px;
+        }
+    .text {
+      background-color: rgb(245, 169, 213);
+      color: white;
+      border: 2px solid rgb(229, 101, 206);
+      margin: 20px;
+      padding: 20px;
+    }
+    </style>
