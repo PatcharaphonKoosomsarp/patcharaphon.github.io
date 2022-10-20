@@ -124,8 +124,8 @@
                                 <p><span class="tab"></span>- Easier Facilitation of Teamwork.</p>
                                 <div style="text-align: center;">
                                     <image src="images/รูปภาพ17.png"></image>
-                                    <image src="images/รูปภาพ18.png"></image>
                                 </div>
+
                                 <h2><b>Passing Arguments to Functions</b></h2>
                                 <h3><b>LOCAL VARIABLES</b></h3>
                                 <p><span class="tab"></span>A local variable is created inside a function and cannot be accessed by statements that are outside the function. Different functions can have local variables with the same names because the functions cannot see each other's local variables.</p>
@@ -277,9 +277,21 @@
                                     return price * DISCOUNT_PERCENTAGE
                                     </div>
                                 </div>
-                                <div style="text-align: center;">
-                                    <image src="images/รูปภาพ22.png"></image>
-                                </div>
+                                <h3 style="text-align: center;">IPO Chart for the discount Function</h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>Input</th>
+                                            <th>Processing</th>
+                                            <th>Output</th>
+                                        </tr>
+                                        <tr>
+                                            <td>An item's regular price</td>
+                                            <td>Calculates an item's discount by multiplying theregular price by the global constant DISCOUNT_PERCENTAGE</td>
+                                            <td>The item's discount</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
                                 <h2><b>VALUE-RETURNING FUNCTIONS</b></h2>
                                 <h3 style="text-align: center;">Example (VALUE-RETURNING FUNCTIONS)</h3>
@@ -488,15 +500,108 @@
                                 </div>
 
                                 <h2><b>Python common functions</b></h2>
-                                <h3><b>COMMON FUNCTIONS</b></h3>
-                                <div style="text-align: center;">
-                                    <image src="images/รูปภาพ23.png"></image>
-                                    <image src="images/รูปภาพ24.png"></image>
-                                    <image src="images/รูปภาพ25.png"></image>
-                                    <image src="images/รูปภาพ26.png"></image>
-                                    <image src="images/รูปภาพ27.png"></image>
-                                    <image src="images/รูปภาพ28.png"></image>
-                                </div>
+                                <h3 style="text-align: center;"><b>COMMON FUNCTIONS</b></h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>abs()</td>
+                                            <td>delattr()</td>
+                                            <td>hash()</td>
+                                            <td>memoryview()</td>
+                                            <td>set()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>all()</td>
+                                            <td>dict()</td>
+                                            <td>help()</td>
+                                            <td>min()</td>
+                                            <td>setattr()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>any()</td>
+                                            <td>dir()</td>
+                                            <td>hex()</td>
+                                            <td>next()</td>
+                                            <td>slice()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ascii()</td>
+                                            <td>divmod()</td>
+                                            <td>id</td>
+                                            <td>object()</td>
+                                            <td>sorted()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>bin()</td>
+                                            <td>enumerate()</td>
+                                            <td>input()</td>
+                                            <td>oct()</td>
+                                            <td>staticmathod()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>bool()</td>
+                                            <td>eval()</td>
+                                            <td>int()</td>
+                                            <td>open()</td>
+                                            <td>str()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>breakpoints()</td>
+                                            <td>exec()</td>
+                                            <td>isinstance()</td>
+                                            <td>ord()</td>
+                                            <td>sum()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>bytearray()</td>
+                                            <td>filter()</td>
+                                            <td>issubclass()</td>
+                                            <td>pow()</td>
+                                            <td>super()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>bytes()</td>
+                                            <td>float()</td>
+                                            <td>iter()</td>
+                                            <td>print()</td>
+                                            <td>tuple()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>callable()</td>
+                                            <td>format()</td>
+                                            <td>len()</td>
+                                            <td>property()</td>
+                                            <td>type()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>chr()</td>
+                                            <td>frozenset()</td>
+                                            <td>list()</td>
+                                            <td>range()</td>
+                                            <td>vars()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>classmethod()</td>
+                                            <td>getattr()</td>
+                                            <td>locals()</td>
+                                            <td>repr()</td>
+                                            <td>zips()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>compile()</td>
+                                            <td>globals()</td>
+                                            <td>map()</td>
+                                            <td>reversed()</td>
+                                            <td>_import_()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>complex()</td>
+                                            <td>hasattr()</td>
+                                            <td>max()</td>
+                                            <td>round()</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </section>
                             
 					</div>
@@ -550,21 +655,6 @@
         display: inline-block;
         margin-left: 40px;
         }
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-    
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
     .text {
       background-color: rgb(245, 169, 213);
       color: white;
