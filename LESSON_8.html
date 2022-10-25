@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>LESSON8</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+
+                        <meta charset="utf-8">
+							<link rel="preconnect" href="https://fonts.googleapis.com">
+							<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+							<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap" rel="stylesheet">
+							<style>
+								body {
+									font-family: 'Bai Jamjuree', sans-serif;
+									font-size: 20px;
+								}
+							</style>
+
+						<h1>LESSON 8</h1>
+						<p>Dictionary and Set</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2><b>Dictionary</b></h2>
+								<p><span class="tab"></span>คือ การจัดเก็บข้อมูลเเบบรายการสมาชิกเเต่ละตัวจะมีองค์ประกอบ 2 อย่างคือ key เเละ value โดยหากเราเข้าถึงสมาชิกต้องใช้ key เป็นตัวกำหนด ซึ่งเปรียบเสมือนพจนานุกรมที่ประกอบด้วยคำศัพท์ (เทียบได้กับ key) เเละความหมายของศัพท์นั้น (เทียบได้กับ value)</p>
+                                <h3><b>Dictionary</b></h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>Key</th>
+                                            <th>Value</th>
+                                        </tr>
+                                        <tr>
+                                            <td>ant</td>
+                                            <td>มด</td>
+                                        </tr>
+                                        <tr>
+                                            <td>bug</td>
+                                            <td>เเมลง</td>
+                                        </tr>
+                                        <tr>
+                                            <td>cat</td>
+                                            <td>เเมว</td>
+                                        </tr>
+                                        <tr>
+                                            <td>dog</td>
+                                            <td>หมา</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h3><b>Dictionaries</b></h3>
+                                <p><span class="tab"></span><i><u>Dictionary</u></i> : object that stores a collection of data</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Each element consists of a key and a value</p>
+                                <p><span class="tab"></span><span class="tab"></span><span class="tab"></span>- Often referred to as mapping of key to value</p>
+                                <p><span class="tab"></span><span class="tab"></span><span class="tab"></span>- Key must be an immutable object</p>
+                                <p><span class="tab"></span><span class="tab"></span>- To retrieve a specific value, use the key associated with it</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Format for creating a dictionary</p>
+                                <p><span class="tab"></span><i><u>dictionary = {key1:val1, key2:val2}</u></i></p>
+                                
+                                <h3><b>ADD AND DELETE DICTIONARY</b></h3>
+                                <p><span class="tab"></span>Dictionaries are mutable objects</p>
+                                <p><span class="tab"></span>To add a new key-value pair: dictionary[key] = value</p>
+                                <p><span class="tab"></span><span class="tab"></span>- If key exists in the dictionary, the value associated with it will be changed</p>
+                                <p><span class="tab"></span>To delete a key-value pair: del dictionary[key]</p>
+                                <p><span class="tab"></span><span class="tab"></span>- If key is not in the dictionary, KeyError exception is raised</p>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม INTRODICT.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ66.png" alt=""></image>
+                                </div>
+                                <h3><b>DICTIONARY NUMBER OF ELEMENTS AND MIXING DATA TYPES</b></h3>
+                                <p><span class="tab"></span>len function: used to obtain number of elements in a dictionary</p>
+                                <p><span class="tab"></span>Keys must be immutable objects, but associated values can be any type of object</p>
+                                <p><span class="tab"></span><span class="tab"></span>- One dictionary can include keys of several different immutable types</p>
+                                <p><span class="tab"></span>Values stored in a single dictionary can be of different types</p>
+                                
+                                <h3><b>DICTIONARY NUMBER OF ELEMENTS AND MIXING DATA TYPES</b></h3>
+                                <p><span class="tab"></span>To create an empty dictionary:</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use {}</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use built-in function dict()</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Elements can be added to the dictionary as program executes</p>
+                                <p><span class="tab"></span>Use a for loop to iterate over a dictionary</p>
+                                <p><span class="tab"></span><span class="tab"></span>- General format: for key in dictionary:</p>
+                                <p><span class="tab"></span><span class="tab"></span><i><u>for key in dictionary:</u></i></p>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม FORDICT.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ67.png" alt=""></image>
+                                </div>
+                                <h3><b>DICTIONARY METHODS</b></h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>Method</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>clear</td>
+                                            <td>Clears the contents of a dictionary.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>get</td>
+                                            <td>Gets the value associated with a specified key. If the key is not found, the method does not raise an exception. Instead, it returns a default value.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>items</td>
+                                            <td>Returns all the keys in a dictionary and their associated values as a sequence of tuples.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>keys</td>
+                                            <td>Returns all the keys in a dictionary as a sequence of tuples.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>pop</td>
+                                            <td>Returns the value associated with a specified key and removes that key-value pairfrom the dictionary. If the key is not found, the method returns a default value.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>popitem</td>
+                                            <td>Returns a randomly selected key-value pair as a tuple from the dictionary and removes that key-value pair from the dictionary.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>values</td>
+                                            <td>Returns all the values in the dictionary as a sequence of tuples.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม DICTMETHODS.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ68.png" alt=""></image>
+                                </div>
+                                <h2><b>Set</b></h2>
+                                <h3><b>Set Methods and Useful Built-in Functions</b></h3>
+                                <p><span class="tab"></span>Set: object that stores a collection of data in same way as mathematical set</p>
+                                <p><span class="tab"></span><span class="tab"></span>- All items must be unique</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Set is unordered</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Elements can be of different data types</p>
+                                <p><span class="tab"></span>len function: returns the number of elements in the set</p>
+                                <p><span class="tab"></span>Sets are mutable objects</p>
+                                <p><span class="tab"></span>add method: adds an element to a set</p>
+                                <p><span class="tab"></span>update method: adds a group of elements to a set</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Argument must be a sequence containing iterable elements, and each of the elements is added to the set</p>
+                                <p><span class="tab"></span>remove and discard methods: remove the specified item from the set</p>
+                                <p><span class="tab"></span><span class="tab"></span>- The item that should be removed is passed to both methods as an argument</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Behave differently when the specified item is not found in the set</p>
+                                <p><span class="tab"></span><span class="tab"></span>- remove method raises a KeyError exception</p>
+                                <p><span class="tab"></span><span class="tab"></span>- discard method does not raise an exception</p>
+                                <p><span class="tab"></span>clear method: clears all the elements of the set</p>
+                                <h3><b>FINDING THE UNION OF SETS</b></h3>
+                                <p><span class="tab"></span>Union of two sets: a set that contains all the elements of both sets</p>
+                                <p><span class="tab"></span>To find the union of two sets:</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use the union method</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Format: set1.union(set2)</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use the | operator</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Format: set1 | set2</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Both techniques return a new set which contains the union of both sets</p>
+                                <p><span class="tab"></span>Intersection of two sets: a set that contains only the elements found in both sets</p>
+                                <p><span class="tab"></span>To find the intersection of two sets:</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use the intersection method</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Format: set1.intersection(set2)</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use the & operator</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Format: set1 & set2</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Both techniques return a new set which contains the intersection of both sets</p>
+                                <p><span class="tab"></span>Symmetric difference of two sets: a set that contains the elements that are not shared by the two sets</p>
+                                <p><span class="tab"></span>To find the symmetric difference of two sets:</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use the symmetric_difference method</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Format: set1.symmetric_difference(set2)</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use the ^ operator</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Format: set1 ^ set2</p>
+                                <h3><b>FINDING THE UNION OF SETS</b></h3>
+                                <p><span class="tab"></span>Set A is subset of set B if all the elements in set A are included in set B</p>
+                                <p><span class="tab"></span>To determine whether set A is subset of set B</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use the issubset method</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Format: setA.issubset(setB)</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use the <= operator</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Format: setA <= setB</p>
+                                <p><span class="tab"></span>Set A is superset of set B if it contains all the elements of set B</p>
+                                <p><span class="tab"></span>To determine whether set A is superset of set B</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use the issuperset method</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Format: setA.issuperset(setB)</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Use the >= operator</p>
+                                <p><span class="tab"></span><span class="tab"></span>- Format: setA >= setB</p>
+                                <h3 style="text-align: center;">ตัวอย่างโปรเเกรม SETINTRO.PY</h3>
+                                <div style="text-align: center;">
+                                    <image src="images/รูปภาพ69.png" alt=""></image>
+                                </div>
+                                <h3><b>SET OPERATION</b></h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>A | B </br>A.union(B)</td>
+                                            <td>Returns a set which is the union of sets A and B.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A |= B</br>A.update(B)</td>
+                                            <td>Adds all elements of array B to the set A.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A & B</br>A.intersection(B)</td>
+                                            <td>Returns a set which is the intersection of sets A and B.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A &= B</br>A.intersection_update(B)</td>
+                                            <td>Leaves in the set A only items that belong to the set B.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A - B</br>A.difference(B)</td>
+                                            <td>Returns the difference of sets A and B.(the elements included in A, but not included in B).</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A -= B</br>A.difference_update(B)</td>
+                                            <td>Removes all elements of B from the set A.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A ^ B</br>A.symmetric_difference(B)</td>
+                                            <td>Returns the symmetric difference of sets A and B (the elements belonging to either A or B , But not to both sets simultaneously).</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A ^= B</br>A.symmetric_difference_update(B)</td>
+                                            <td>Writes in A the symmetric difference of sets A and B.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A <= B</br>A.issubset(B)</td>
+                                            <td>Returns true if A is a subset of B.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A >= B</br>A.issuperset(B)</td>
+                                            <td>Returns true if B is a subset of A.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A < B</td>
+                                            <td>Equivalent to A <= B and A != B.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A > B</td>
+                                            <td>Equivalent to A >= B and A != B.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                            </section>
+                            
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<style>
+    .tab {
+        display: inline-block;
+        margin-left: 40px;
+        }
+    .text {
+      background-color: rgb(245, 169, 213);
+      color: white;
+      border: 2px solid rgb(229, 101, 206);
+      margin: 20px;
+      padding: 20px;
+    }
+    </style>
