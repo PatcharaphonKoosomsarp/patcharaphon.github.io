@@ -41,10 +41,11 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								<h2><b>Repetition Structure</b></h2>
-								<p><span class="tab"></span>โครงสร้างแบบวนซ้ำ, โครงสร้างการทำงานที่มีการทำงานในบางคำสั่งหรือบางชุดของคำสั่งซ้ำกันมากกว่าหนึ่งรอบขึ้นไป โดยการวนซ้ำนี้จะต้องมีการตัดสินใจร่วมอยู่ด้วยเสมอ เพื่อเป็นเงื่อนไขที่จะตัดสินใจว่าเมื่อใดจะวนซ้ำ หรือเมื่อใดจะถึงเวลาหยุดการวนซ้ำ</p>
+								<p><span class="tab"></span>An iterative structure is one in which specific statements or groups of instructions are repeated more than
+                                    once. This iteration must always be determined as a condition to determine whether or not to loop.</p>
 								<h2><b>While Loop</b></h2>
-								<p><span class="tab"></span>While เป็นคำสั่งวนซ้ำที่มีการตรวจสอบเงื่อนไข (condition) ก่อนเข้าทำงานเสมอ เมื่อเงื่อนไขที่
-                                    ทำการตรวจสอบเป็นจริง จึงจะประมวลผลคำสั่งหลัง while แต่ถ้าเงื่อนไขเป็นเท็จจะยุติการทำงานทันที
+								<p><span class="tab"></span>An iterative statement with a precondition that always checks the conditions before execution. When the
+                                    checked condition is true, the statement after "while" is executed, but if the condition is false it will stop the order.
                                 </p>
                                 <div style="text-align: center;">
                                     <image src="images/img5.png" alt=""></image>
@@ -67,11 +68,11 @@
                                     statement(s)
                                     </div>
                                 </div>
-                                <h3 style="text-align: center;">ตัวอย่าง Flowchart</h2>
+                                <h3 style="text-align: center;">Example Flowchart</h2>
                                     <div style="text-align: center;">
                                       <image src="images/while.png" alt=""></image>
                                     </div>
-                                    <h3 style="text-align: center;">ตัวอย่างโปรเเกรม</h2>
+                                    <h3 style="text-align: center;">Example Program</h2>
                                         <div style="text-align: center;">
                                             <image src="images/img34.png" alt=""></image>
                                           </div>
@@ -79,9 +80,9 @@
 
 
                                 <h2><b>For Loop</b></h2>
-                                <p><span class="tab"></span>คำสั่ง for เป็นคำสั่งที่ใช้สำหรับการทำซ้ำ เช่นเดียวกับ while และต้องมีการตรวจสอบเงื่อนไข
-                                    ก่อนเข้าลูปเหมือนกัน แต่แตกต่างกันตรงที่ for จะตรวจสอบรายการแบบลำดับแทน (Item of
-                                    sequence) เช่น ข้อมูลชนิดสตริง ลิสต์ หรือทัพเพิล 
+                                <p><span class="tab"></span>The for statement, like the while statement, is used to loop, and the condition must be checked before
+                                    entering the loop. The difference is that for checks, an item in sequence (Item of sequence), such as a string, list, or
+                                    tuples type of data, is used instead.
                                 </p>
                                 <div style="text-align: center;">
                                     <image src="images/img6.png" alt=""></image>
@@ -95,12 +96,12 @@
                                     statement(s)
                                     </div>
                                 </div>
-                                <h3 style="text-align: center;">ตัวอย่าง Flowchart</h2>
+                                <h3 style="text-align: center;">Example Flowchart</h2>
                                     <div style="text-align: center;">
                                       <image src="images/for.png" alt=""></image>
                                     </div>
 
-                                    <h3 style="text-align: center;">ตัวอย่างโปรเเกรม</h2>
+                                    <h3 style="text-align: center;">Example Program</h2>
                                 <div style="text-align: center;">
                                     <image src="images/for_program.png" alt=""></image>
                                   </div>
@@ -150,11 +151,12 @@
 
 
                                 <h2><b>Calculating Running Total</b></h2>
-                                <p><span class="tab"></span>ยอดรวมคือผลรวมของตัวเลขที่สะสมจากการวนซ้ำแต่ละครั้ง ตัวแปรที่ใช้เก็บยอดรวมเรียกว่าตัวสะสม</p>
-                                <p><span class="tab"></span>โปรแกรมที่คำนวณผลรวมของชุดตัวเลขมักใช้สององค์ประกอบ:</p>
-                                <p><span class="tab"></span><span class="tab"></span>- วงวนที่อ่านแต่ละตัวเลขในชุด</p>
-                                <p><span class="tab"></span><span class="tab"></span>- ตัวแปรที่สะสมตัวเลขทั้งหมดเมื่ออ่าน</p>
-                                <h3 style="text-align: center;">ตัวอย่าง Flowchart</h2>
+                                <p><span class="tab"></span>The total is the sum of the numbers from each iteration. The variable that stores the sum is known as the
+                                    accumulator.</p>
+                                <p><span class="tab"></span>Two of these components are often used in programs that calculate the sum of a set of numbers:</p>
+                                <p><span class="tab"></span><span class="tab"></span>- a loop that iterates over each number in a series</p>
+                                <p><span class="tab"></span><span class="tab"></span>- A variable that collects all numbers when reading</p>
+                                <h3 style="text-align: center;">Example Flowchart</h2>
                                     <div style="text-align: center;">
                                       <image src="images/img7.png" alt=""></image>
                                     </div>
@@ -284,9 +286,12 @@
                                 </div>
 
                                 <h2><b>Sentinel</b></h2>
-                                <p>Sentinel เป็นค่าพิเศษที่ทำเครื่องหมายจุดสิ้นสุดของลำดับของค่า</p>
-                                <p><span class="tab"></span>- เพียงถามผู้ใช้เมื่อสิ้นสุดการวนซ้ำแต่ละครั้ง หากมีค่าอื่นที่ต้องดำเนินการ อย่างไรก็ตาม หากลำดับของค่ายาว อย่างไรก็ตาม การถามคำถามนี้เมื่อสิ้นสุดการวนซ้ำแต่ละครั้งอาจทำให้โปรแกรมยุ่งยากสำหรับผู้ใช้</p>
-                                <p><span class="tab"></span>- ถามผู้ใช้ที่จุดเริ่มต้นของโปรแกรมว่ามีกี่รายการในลำดับ อย่างไรก็ตาม สิ่งนี้อาจทำให้ผู้ใช้ไม่สะดวก หากลำดับนั้นยาวมากและผู้ใช้ไม่ทราบจำนวนรายการที่อยู่ในนั้น ผู้ใช้จะต้องนับจำนวนรายการนั้น</p>
+                                <p>A special value that marks the end of a value series.</p>
+                                <p><span class="tab"></span>- At the end of each loop, ask the user. If there are other values to be taken, however, asking this question at
+                                    the end of each loop might make the program cumbersome for the user.</p>
+                                <p><span class="tab"></span>- Asks the user at the beginning of the program how many items are in the sequence. This can be
+                                    cumbersome for the user if the sequence is very long and the user can't remember how many items are in it
+                                    so, the user will need to count the number of items.</p>
                                 <h3 style="text-align: center;">Example (Sentinel)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
@@ -380,7 +385,9 @@
                                 </div>
                                 
                                 <h2><b>Input Validation Loops</b></h2>
-                                <p><span class="tab"></span>การตรวจสอบความถูกต้องของข้อมูลเข้าเป็นกระบวนการตรวจสอบข้อมูลที่ป้อนเข้าสู่โปรแกรม เพื่อให้แน่ใจว่าถูกต้องก่อนที่จะนำไปใช้ในการคำนวณ การตรวจสอบความถูกต้องของอินพุตมักทำโดยใช้ลูปที่วนซ้ำตราบเท่าที่ตัวแปรอินพุตอ้างอิงข้อมูลที่ไม่ถูกต้อง</p>
+                                <p><span class="tab"></span>Input validation is the process of ensuring that information entered into a program is correct before it is used
+                                    in calculation. Input validation is often done through the use of loops that run as long as the input variable refers
+                                    invalid data.</p>
                                 <h3 style="text-align: center;">Example (Input Validation Loops)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
@@ -419,8 +426,9 @@
                                 </div>
                             
                                 <h2><b>Nested loops</b></h2>
-                                <p><span class="tab"></span>ไพธอนให้ผู้เขียนโปรแกรมสามารถใช้ลูปซ้อนได้ (การวาง for loop ไว้ภายใน for loop) มีรูปแบบคำสั่งดังนี้</p>
-                                <h3 style="text-align: center;">ลูปซ้อนของ for</h3>
+                                <p><span class="tab"></span>Python allows programmers to use nested loops (placement of a “for loop” within a “for loop”) as it shows
+                                    below.</p>
+                                <h3 style="text-align: center;">Nested loops of "for"</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for iterating_var insequence:
@@ -435,7 +443,7 @@
                                     statements(s)
                                     </div>
                                 </div>
-                                <h3 style="text-align: center;">ลูปซ้อนของ while</h3>
+                                <h3 style="text-align: center;">Nested loops of "while"</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     while expression:
@@ -450,7 +458,7 @@
                                     statements(s)
                                     </div>
                                 </div>
-                                <h3 style="text-align: center;">ลูปซ้อนของ for กับ while</h3>
+                                <h3 style="text-align: center;">Nested loops of "for" and "while"</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
                                     for iterating_var insequence:
@@ -465,12 +473,11 @@
                                     statements(s)
                                     </div>
                                 </div>
-                                <p><span class="tab"></span>การวางลูปซ้อนภายใน ไพธอนไม่ได้จำกัดว่ามีได้ทั้งหมดกี่ชั้น ดังนั้นผู้เขียนโปรแกรมสามารถ
-                                    วางลูปซ้อนได้ตามอิสระ ขึ้นอยู่กับปัญหาว่ามีความซับซ้อนมากน้อยเพียงใด แต่สิ่งที่ควรจดจำไว้เสมอ
-                                    คือ การวางลูปที่ซ้อนกันมากๆ จะทำให้โปรแกรมอ่านหรือแก้ไขข้อผิดพลาดได้ยากขึ้นด้วย จะเกิดปัญหา
-                                    เรื่องของการย่อหน้าภายในลูป อาจจะส่งผลให้โปรแกรมทำงานผิดพลาด ตรงจุดนี้ถือว่าเป็นจุดอ่อน
-                                    ของไพธอนก็ได้ เพราะการไม่มีเครื่องหมายบอกขอบเขต ทำให้บางครั้งต้องใช้สายตาในการหาขอบเขตของคำสั่งเอง 
-                                    </p>
+                                <p><span class="tab"></span>The number of levels that can be nested loops in Python is not limited. As a result, programmers may nest
+                                    loops independently. It depends on the complexity of the task, but overlapping loops might make it difficult for the
+                                    program to understand or fix errors. There will be an indentation issue within the loop. This may cause the program to
+                                    malfunction therefore, this is a weakness for Python since the lack of a boundary marker often requires depend on
+                                    the eye to determine the limit of a command.</p>
                                     <h3 style="text-align: center;">Example (Nested loops)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
@@ -488,7 +495,9 @@
                                 </div>
                                 <h2><b>Continue , Break , Pass</b></h2>
                                 <h2>Continue</h2>
-                                <p><span class="tab"></span>เป็นคำสั่งที่สั่งให้โปรแกรมกลับไปเริ่มต้นใหม่ที่ต้น loop ซึ่งส่งผลให้คำสั่งที่เหลือทั้งหมดหลังคำสั่ง continue และอยู่ภายในขอบเขตของคำสั่งทำซ้ำ จะไม่ถูกประมวลผลในรอบนั้นๆ ไปด้วย (แต่ไม่ได้ออกจากคำสั่งการทำซ้ำ) คำสั่ง continue จะใช้ได้ทั้ง while และ for loop สำหรับแผนผังจำลองการทำงานของ continue</p>
+                                <p><span class="tab"></span>A statement instructing the program to restart at the beginning of the loop, resulting in any statements after
+                                    the continue statement and within the scope of the repeat statement not being processed in that loop. In the
+                                    continuing scheme, the continue statement works with both "while" and "for loop".</p>
                                 <div style="text-align: center;">
                                     <image src="images/img8.png"></image>
                                 </div>
@@ -568,7 +577,10 @@
                                     </div>
                                 </div>
                                 <h2>Break</h2>
-                                <p><span class="tab"></span>เป็นคำสั่งที่สั่งให้โปรแกรมยุติการทำซ้ำ(Loop) สำหรับการทำงานของคำสั่ง break ใน nested loop เมื่อโปรแกรมยุติการทำงานใน Loop ปัจจุบันแล้ว โปรแกรมจะทำงานต่อใน Loop ที่ครอบ Loop ปัจจุบันอยู่ต่อไป คำสั่ง break จะใช้ทำงานกับ while และ for loop เท่านั้น ไม่สามารถใช้ได้กับ if, if-else, if-elif ได้เหมือนในภาษาซีสำหรับแผนผังจำลองการทำงานของ break</p>
+                                <p><span class="tab"></span>This command tells the program to stop repeating itself. When the program stops in the current loop during
+                                    the execution of the break statement in a nested loop, the program continues to run in the loop that encapsulates
+                                    the current loop. The break statement only works with the while and for loops, not if, if-else, and if-elif as in C for a
+                                    break mockup.</p>
                                 
                                 <div style="text-align: center;">
                                     <image src="images/img9.png"></image>
@@ -616,7 +628,8 @@
                                     </div>
                                 </div>
                                 <h2>Pass</h2>
-                                <p><span class="tab"></span>เป็นคำสั่งหนึ่งที่ระบุว่าไม่มีการดำเนินการใดๆ ในบรรทัดนั้น มักจะใช้ในกรณีที่มีการวางโครงสร้างโปรแกรมเอาไว้ แต่ยังไม่ได้ลงรายละเอียดในการระบุคำสั่ง</p>
+                                <p><span class="tab"></span>It is one instruction that indicates that no action on that line is taken. Often used when a program is
+                                    organized but the instructions have not been specified in detail.</p>
                                 <h3 style="text-align: center;">Example (Pass)</h3>
                                 <div class="text">
                                     <div><span class="tab"></span>
